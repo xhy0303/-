@@ -1,0 +1,6 @@
+﻿ImageProcessing.obj : error LNK2011: 未链接预编译对象；映像可能不能运行
+    已定义且可能匹配的符号上的提示:
+      ___@@_PchSym_@00@UlmvwirevLRLvnzroOhafOvwfOxmUKlvKomKqnKlvKorKqpUKltKquKozKluKpmKqsKluKqoKolKluKrwKrkKluKpvKrvKlsKqzKrtUKlsKprKroKluKopKrkUivovzhvUhgwzucOlyq@4B2008FD98C1DD4
+      ___@@_PchSym_@00@UzUPdlipUBUhUrmgvinvwrzgvUexgllohUmzucxdOmzgrevkilqPDFEEFFCDFUlyqiUcIGUhgwzucOlyq@nafxcw
+      ___@@_PchSym_@00@UzUPdlipUBUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4
+.\Release\ImageProcessing.exe : fatal error LNK1120: 1 个无法解析的外部命令

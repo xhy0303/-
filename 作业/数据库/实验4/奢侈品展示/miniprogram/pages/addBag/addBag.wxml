@@ -1,0 +1,24 @@
+<form bindsubmit="addBag">
+  <text class="title">新增包包</text>
+  <view class="input">
+    <text>id</text>
+    <input type="text" name="bag_id" placeholder="请输入包包编号" />
+  </view>
+  <view class="input">
+    <text>类型</text>
+    <input type="text" name="bname" placeholder="请输入包包种类" />
+  </view>
+  <view class="input">
+    <text>颜色</text>
+    <input type="text" name="color" placeholder="请输入包包颜色" />
+  </view>
+  <view class="input">
+    <text>设计师</text>
+    <input type="text" name="maker" placeholder="请输入包包设计师" />
+  </view>
+  <view class="input">
+    <text>价格</text>
+    <input type="text" name="price" placeholder="请输入包包租赁价格" />
+  </view>
+  <button form-type="submit" type="primary">确认添加</button>
+</form>

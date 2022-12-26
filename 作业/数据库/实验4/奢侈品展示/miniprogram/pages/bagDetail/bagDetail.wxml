@@ -1,0 +1,13 @@
+<view class="container">
+  <text class="title">{{info.bname}}</text>
+  <image src="{{image}}" mode="aspectFill" />
+  <view class="mid" style="margin-right: 140rpx;">
+    <text class="info">设计师：{{info.maker}}</text>
+    <text class="info">颜色：{{info.color}}</text>
+    <text class="info">价格：{{info.price}}¥</text>
+    <text class="info" wx:if="{{info.ready==1}}">当前可租赁</text>
+    <text class="info" wx:else="{{info.ready==0}}">当前不可租赁</text>
+  </view>
+  <button bindtap="postRent" data-bid="{{info.bag_id}}" type="primary" wx:if="{{info.ready == 1}}">出租</button>
+  <button bindtap="postReturn" data-bid="{{info.bag_id}}" type="default" wx:else="{{info.ready == 0}}">归还</button>
+</view>

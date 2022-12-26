@@ -1,0 +1,9 @@
+<view class="container">
+  <text class="title">{{cusInfo.first_name}} {{cusInfo.last_name}}</text>
+  <view class="mid" style="margin-right: 140rpx;">
+    <text class="info">租赁时长: {{rentalInfo.rental_length}}天</text>
+    <text class="info">租赁花费：{{rentalInfo.cost}}¥</text>
+    <text class="info">租赁包包：{{info.bname}}</text>
+  </view>
+  <button bindtap="postBags" type="primary">确定</button>
+</view>

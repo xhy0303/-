@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/bags/bags",
+    "pages/index/index",
+    "pages/addBage/addBag",
+    "pages/addBag/addBag",
+    "pages/addCus/addCus",
+    "pages/cus/cus",
+    "pages/bagDetail/bagDetail",
+    "pages/cusDetail/cusDetail",
+    "pages/bestCus/bestCus",
+    "pages/addRent/addRent",
+    "pages/addReturn/addReturn",
+    "pages/rentalDetail/rentalDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D9D9D9",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

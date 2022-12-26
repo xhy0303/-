@@ -1,0 +1,32 @@
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+image{
+  align-self: center;
+  height: 600rpx;
+  width: 600rpx;
+  margin: 50rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);
+}
+.mid{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  margin-bottom: 20rpx;
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.55);
+}

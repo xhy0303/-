@@ -1,0 +1,5 @@
+C:\Users\10097\Desktop\实验01：ImageProcessing-图像显示\Debug\ImageProcessing.exe
+D:\作业\数字图像处理\实验1_图像显示_谢弘烨_2020151036\实验01：ImageProcessing-图像显示\Debug\ImageProcessing.exe
+D:\作业\数字图像处理\程序\Debug\ImageProcessing.exe
+C:\Users\10097\OneDrive - email.szu.edu.cn\作业\数字图像处理\程序\Debug\ImageProcessing.exe
+D:\OneDrive - email.szu.edu.cn\作业\数字图像处理\程序\Debug\ImageProcessing.exe

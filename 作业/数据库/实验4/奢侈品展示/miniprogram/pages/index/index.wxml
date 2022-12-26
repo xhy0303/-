@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="topper">
+    <button type="primary" bindtap="postBags">包包</button>
+    <button type="primary" bindtap="postCus">顾客</button>
+    <button type="default" bindtap="postIndex">处理</button>
+  </view>
+  <button type="primary" bindtap="postBestCus">顾客排行</button>
+</view>

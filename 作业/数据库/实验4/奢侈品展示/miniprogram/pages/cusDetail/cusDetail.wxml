@@ -1,0 +1,22 @@
+<view class="container">
+  <text class="title">{{info.first_name}} {{info.last_name}}</text>
+  <view class="mid" style="margin-left: 10rpx;">
+    <text class="info">顾客id: {{info.customer_id}}</text>
+    <text class="info">地址：{{info.addr}}</text>
+    <text class="info">电话：{{info.telephone}}</text>
+    <text class="info">手机：{{info.cell}}</text>
+    <text class="info">邮箱：{{info.email}}</text>
+    <text class="info">信用卡：{{info.credit_card}}</text>
+  </view>
+  <view wx:if="{{rental.length != 0}}">
+    <text class="title" style="margin-right: 400rpx;">租赁记录</text>
+    <view class="item" wx:for="{{rental}}">
+      <text class="inf0">类型: {{item.bname}}</text>
+      <text class="inf0">设计师: {{item.maker}}</text>
+      <text class="inf0">价格: {{item.cost}}¥</text>
+    </view>
+    <text class="titlE">总价: {{total_cost}}¥</text>
+  </view>
+  <text class="title" wx:else="{{rental.length == 0}}">暂无租赁记录</text>
+  <view style="padding: 50rpx;" />
+</view>

@@ -1,0 +1,12 @@
+<form bindsubmit="addRent">
+  <text class="title">填写租赁信息</text>
+  <view class="input">
+    <text>顾客id</text>
+    <input type="text" name="customer_id" placeholder="请输入顾客编号" />
+  </view>
+  <view class="input">
+    <text>归还日期</text>
+    <input type="text" name="date_return" placeholder="yyyy-mm-dd" />
+  </view>
+  <button form-type="submit" type="primary">确认添加</button>
+</form>

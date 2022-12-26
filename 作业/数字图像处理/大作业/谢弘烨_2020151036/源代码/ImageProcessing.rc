@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMAGEPROCESSING     ICON                    "ImageProcessing.ICO"
+
+IDI_SMALL               ICON                    "SMALL.ICO"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_IMAGEPROCESSING MENU
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "显示RAW图像",                     IDM_SHOWRAWIMAGE
+        MENUITEM "显示BMP图像",                     IDM_SHOWBMPIMAGE
+    END
+    POPUP "动画"
+    BEGIN
+        MENUITEM "淡出",                          IDM_GRAYTOLOW
+        MENUITEM "淡入",                          IDM_GRAYTOHIGH
+        MENUITEM "左右开门",                        IDM_LEFTRIGHTOPEN
+        MENUITEM "左右关门",                        IDM_LEFTRIGHTCLOSE
+        MENUITEM "上下开门",                        IDM_TOPBOTTOMOPEN
+        MENUITEM "上下关门",                        IDM_TOPBOTTOMCLOSE
+        MENUITEM "向右百叶窗",                       IDM_LRSHUTTER
+        MENUITEM "向左百叶窗",                       IDM_RLSHUTTER
+        MENUITEM "向下百叶窗",                       IDM_TBSHUTTER
+        MENUITEM "向上百叶窗",                       IDM_BTSHUTTER
+    END
+    POPUP "灰度变换"
+    BEGIN
+        MENUITEM "显示直方图",                       IDM_HISTOGRAMSHOW
+        MENUITEM "反色",                          IDM_GRAYREVERSION
+        MENUITEM "对数变换",                        IDM_CHANGEBYLOG
+        POPUP "伽马矫正"
+        BEGIN
+            MENUITEM "γ\037\037=1",                 IDM_CHANGEBYPOW_1
+            MENUITEM "\037\037γ=5",                 IDM_CHANGEBYPOW_5
+            MENUITEM "\037\037γ=0.05",              IDM_CHANGEBYPOW_05
+        END
+        MENUITEM "分段函数",                        IDM_CHANGEBYFUNCS
+        POPUP "位图分割"
+        BEGIN
+            MENUITEM "位平面0",                        IDM_CHANGEBYBIT0
+            MENUITEM "位平面1",                        IDM_CHANGEBYBIT1
+            MENUITEM "位平面2",                        IDM_CHANGEBYBIT2
+            MENUITEM "位平面3",                        IDM_CHANGEBYBIT3
+            MENUITEM "位平面4",                        IDM_CHANGEBYBIT4
+            MENUITEM "位平面5",                        IDM_CHANGEBYBIT5
+            MENUITEM "位平面6",                        IDM_CHANGEBYBIT6
+            MENUITEM "位平面7",                        IDM_CHANGEBYBIT7
+        END
+        MENUITEM "二值化",                         IDM_THRESHOLD
+        MENUITEM "均衡化",                         IDM_HISTOGRAMEVEN
+        MENUITEM "灰度化",                         IDM_TEST
+    END
+    POPUP "空间滤波"
+    BEGIN
+        MENUITEM "均值滤波",                        IDM_AVERAGEFILTER
+        MENUITEM "高斯滤波",                        IDM_AVERAGEGAUSS
+        MENUITEM "极大值滤波",                       IDM_MAXFILTER
+        MENUITEM "极小值滤波",                       IDM_MINFILTER
+        MENUITEM "中值滤波",                        IDM_MIDFILTER
+        POPUP "随机噪声"
+        BEGIN
+            POPUP "盐噪声"
+            BEGIN
+                MENUITEM "0.1",                         IDM_SALTNOISE1
+                MENUITEM "0.075",                       IDM_SALTNOISE3
+                MENUITEM "0.05",                        IDM_SALTNOISE5
+                MENUITEM "0.025",                       IDM_SALTNOISE7
+                MENUITEM "0.01",                        IDM_SALTNOISE9
+            END
+            POPUP "胡椒噪声"
+            BEGIN
+                MENUITEM "0.1",                         IDM_PEPPERNOISE1
+                MENUITEM "0.075",                       IDM_PEPPERNOISE3
+                MENUITEM "0.05",                        IDM_PEPPERNOISE5
+                MENUITEM "0.025",                       IDM_PEPPERNOISE7
+                MENUITEM "0.01",                        IDM_PEPPERNOISE9
+            END
+        END
+    END
+    POPUP "边缘检测"
+    BEGIN
+        MENUITEM "Laplace",                     IDM_LAPLACE
+        MENUITEM "PrewittByMax",                IDM_PREWITT1
+        MENUITEM "PrewittByAve",                IDM_PREWITT0
+        MENUITEM "SobelByMax",                  IDM_SOBEL1
+        MENUITEM "SobelByAve",                  IDM_SOBEL0
+        MENUITEM "Roberts",                     IDM_ROBERTS
+    END
+    POPUP "几何变换"
+    BEGIN
+        POPUP "图像平移"
+        BEGIN
+            MENUITEM "左上",                          IDM_TRANSLATION
+            MENUITEM "右下",                          IDM_TRANSLATION1
+        END
+        POPUP "图像缩放"
+        BEGIN
+            MENUITEM "水平放大",                        IDM_SCALING2
+            MENUITEM "水平缩小",                        IDM_SCALING3
+            MENUITEM "垂直放大",                        IDM_SCALING4
+            MENUITEM "垂直缩小",                        IDM_SCALING5
+            MENUITEM "等比放大",                        IDM_SCALING6
+            MENUITEM "等比缩小",                        IDM_SCALING7
+            MENUITEM "横大竖小",                        IDM_SCALING
+            MENUITEM "横小竖大",                        IDM_SCALING1
+        END
+        POPUP "图像旋转"
+        BEGIN
+            MENUITEM "顺时针",                         IDM_ROTATION1
+            MENUITEM "逆时针",                         IDM_ROTATION
+        END
+    END
+    MENUITEM "关于",                          IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_IMAGEPROCESSING ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 230, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_IMAGEPROCESSING,IDC_MYICON,14,9,20,20
+    LTEXT           "ImageProcessing Version 2.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2022",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+    LTEXT           "Made by 谢弘烨",IDC_STATIC,49,36,121,10
+    LTEXT           "Tutored by 吴惠思",IDC_STATIC,49,49,66,11
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "ImageProcessing"
+    IDS_HELLO               "Hello World!"
+    IDC_IMAGEPROCESSING     "IMAGEPROCESSING"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

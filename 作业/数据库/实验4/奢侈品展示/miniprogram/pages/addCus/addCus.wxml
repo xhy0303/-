@@ -1,0 +1,36 @@
+<form bindsubmit="addCus">
+  <text class="title">新增顾客</text>
+  <view class="input">
+    <text>id</text>
+    <input type="text" name="customer_id" placeholder="请输入顾客编号" />
+  </view>
+  <view class="input">
+    <text>姓</text>
+    <input type="text" name="last_name" placeholder="请输入顾客姓氏" />
+  </view>
+  <view class="input">
+    <text>名</text>
+    <input type="text" name="first_name" placeholder="请输入顾客名字" />
+  </view>
+  <view class="input">
+    <text>地址</text>
+    <input type="text" name="addr" placeholder="请输入顾客地址" />
+  </view>
+  <view class="input">
+    <text>电话</text>
+    <input type="text" name="telephone" placeholder="请输入顾客固定电话" />
+  </view>
+  <view class="input">
+    <text>手机</text>
+    <input type="text" name="cell" placeholder="请输入顾客手机号码" />
+  </view>
+  <view class="input">
+    <text>邮箱</text>
+    <input type="text" name="email" placeholder="请输入顾客电子邮箱" />
+  </view>
+  <view class="input">
+    <text>信用卡</text>
+    <input type="text" name="credit_card" placeholder="请输入顾客信用卡号" />
+  </view>
+  <button form-type="submit" type="primary">确认添加</button>
+</form>

@@ -1,0 +1,19 @@
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.container{
+  align-content: center;
+}
+.topper{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  padding: 10rpx;
+  margin-bottom: 40rpx;
+}
+.topper button{
+  width: 30%;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);
+}

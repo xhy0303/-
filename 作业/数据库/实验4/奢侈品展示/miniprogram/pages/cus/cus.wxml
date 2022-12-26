@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="topper">
+    <button type="primary" bindtap="postBags">包包</button>
+    <button type="default" bindtap="postCus">顾客</button>
+    <button type="primary" bindtap="postIndex">处理</button>
+  </view>
+  <form bindsubmit="search">
+    <view class="input">
+      <input type="text" placeholder="搜索顾客" name="word"/>
+      <button form-type="submit" type="primary" size="mini">搜索</button>
+    </view>
+  </form>
+  <view class="content">
+    <view class="item" wx:for="{{customers}}">
+      <text class="title">{{item.first_name}} {{item.last_name}}</text>
+      <text class="subTitle">{{item.addr}}</text>
+      <text class="info" style="margin-top: 10rpx;">Email: {{item.email}}</text>
+      <text class="info">Telephone: {{item.telephone}}</text>
+      <text class="info">Cell Phone: {{item.cell}}</text>
+      <view style="align-self: center; margin-top: 20rpx">
+        <button bindtap="showDetail" data-cid="{{item.customer_id}}" size="mini" style="box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(0, 0, 0, 0.15); margin-right: 10rpx;">详情</button>
+        <button bindtap="delCus" data-cid="{{item.customer_id}}" size="mini" type="warn" style="box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(1, 0, 0, 0.15);">删除</button>
+      </view>
+    </view>
+  </view>
+  <button bindtap="postAdd" type="primary" style="box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);">新增顾客</button>
+  <view style="padding: 5%"></view>
+</view>

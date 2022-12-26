@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\Users\10097\OneDrive - email.szu.edu.cn\作业\算法\实验二\实验二\源.cpp(164,30): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\Users\10097\OneDrive - email.szu.edu.cn\作业\算法\实验二\实验二\源.cpp(66): warning C4715: “min”: 不是所有的控件路径都返回值
+  实验二.vcxproj -> C:\Users\10097\OneDrive - email.szu.edu.cn\作业\算法\实验二\实验二\x64\Debug\实验二.exe

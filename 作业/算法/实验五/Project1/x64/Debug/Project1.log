@@ -1,0 +1,6 @@
+﻿  源.cpp
+D:\OneDrive - email.szu.edu.cn\作业\算法\实验五\Project1\源.cpp(83,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\OneDrive - email.szu.edu.cn\作业\算法\实验五\Project1\源.cpp(126,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\OneDrive - email.szu.edu.cn\作业\算法\实验五\Project1\源.cpp(385,45): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+D:\OneDrive - email.szu.edu.cn\作业\算法\实验五\Project1\源.cpp(439,30): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Project1.vcxproj -> D:\OneDrive - email.szu.edu.cn\作业\算法\实验五\Project1\x64\Debug\Project1.exe

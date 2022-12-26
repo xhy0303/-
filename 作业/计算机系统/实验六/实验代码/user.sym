@@ -1,0 +1,14 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ADDR                    3057
+//	COUNT                   305F
+//	DELAY                   3059
+//	ENTER                   3054
+//	INI                     3055
+//	KBSR                    3058
+//	LOOP                    3004
+//	REP                     305B
+//	SIGN1                   3010
+//	SIGN2                   3032
+//	SaveR1                  3060
+//	VADD                    3056

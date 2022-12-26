@@ -1,0 +1,44 @@
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  display: flex;
+  flex-direction: row;
+  width: 500rpx;
+  height: 80rpx;
+  background-color: white;
+  border-radius: 80rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);
+}
+.input text{
+  padding: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 10rpx;
+  font-size: large;
+}
+.input input{
+  padding: 20rpx;
+  padding-left: 10rpx;
+  border-left: solid #D9D9D9;
+}
+button{
+  width: 300rpx;
+  margin-top: 50rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);
+}
+.title{
+  font-size: xx-large;
+  font-weight: bolder;
+}

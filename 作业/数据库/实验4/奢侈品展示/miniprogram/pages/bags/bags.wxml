@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="topper">
+    <button type="default" bindtap="postBags">包包</button>
+    <button type="primary" bindtap="postCus">顾客</button>
+    <button type="primary" bindtap="postIndex">处理</button>
+  </view>
+  <form bindsubmit="search">
+    <view class="input">
+      <input type="text" placeholder="搜索包包" name="word"/>
+      <button form-type="submit" type="primary" size="mini">搜索</button>
+    </view>
+  </form>
+  <view class="content">
+    <view class="item" wx:for="{{bags}}">
+      <text class="Number">{{item.bag_id}}</text>
+      <text class="title">{{item.bname}}</text>
+      <text class="subTitle">{{item.maker}}</text>
+      <view class="more">
+        <text class="info">{{item.color}}</text>
+        <text class="info">Price: {{item.price}}¥</text>
+        <view style="padding-right: 18%;"></view>
+        <view>
+          <button bindtap="showDetail" data-bid="{{item.bag_id}}" size="mini" style="box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(0, 0, 0, 0.15); margin-right: 10rpx;">详情</button>
+          <button bindtap="delBag" data-bid="{{item.bag_id}}" size="mini" type="warn" style="box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(1, 0, 0, 0.15);">删除</button>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="postAdd" type="primary" style="box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.15);">新增包包</button>
+  <view style="padding: 5%"></view>
+</view>

@@ -1,0 +1,10 @@
+<view class="container">
+  <text class="title">顾客排行</text>
+  <view class="item" wx:for="{{customers}}">
+      <text class="title">{{item.first_name}} {{item.last_name}}</text>
+      <text class="subTitle">{{item.addr}}</text>
+      <text class="info" style="margin-top: 10rpx;">手机: {{item.telephone}}</text>
+      <text class="info">租赁时长: {{item.total_length_of_rentals}}</text>
+    </view>
+    <view style="padding: 20rpx;"/>
+</view>
