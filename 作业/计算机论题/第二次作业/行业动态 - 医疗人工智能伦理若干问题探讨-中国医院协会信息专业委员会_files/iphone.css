@@ -1,0 +1,133 @@
+/* CSS Document */
+/*新加banner切换样式*/
+@media only screen and (max-width: 1920px){
+	.split .img_box img{ margin-left:-40px;}
+}
+@media only screen and (max-width: 1680px){
+	.split .img_box img{ margin-left:-160px;}
+}
+@media only screen and (max-width: 1440px){
+	.split .img_box img{ margin-left:-280px;}
+}
+@media only screen and (max-width: 1366px){
+	.split .img_box img{ margin-left:-320px;}
+}
+
+@media only screen and (max-width: 1280px){
+	.split .img_box img{ margin-left:-360px;}
+}
+
+@media only screen and (max-width: 1024px){
+	.split .img_box img{ margin-left:-490px;}
+}
+
+@media only screen and (max-width: 768px){
+	.newlist2 li{line-height:180%}
+	.header{padding:0 5%;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+	.header .headerMain,#mutiNav .lv1_ul,.main,#focus .btnDiv{width:100%}
+	#mutiNav .lv1_li{ width:16%}
+	#mutiNav .lv1_li1{ width:20%}
+	#mutiNav .lv1_li .lv1_tit,#mutiNav .lv1_li .lv1_home{width:100%!important}
+	.lv2_ul{display:none!important}
+	#focus ul li{background-size:100%}
+	#focus ul li img{width:100%}
+	#focus .btn,#focus .btnDiv,.caption,.clunLast{display:none}
+	.nethosptal ul li:hover{background:none;box-shadow:none}	
+	.nethosptal ul li:hover .icon01{background-position:0 -150px}
+	.nethosptal ul li:hover .icon02{background-position:-90px -150px}
+	.nethosptal ul li:hover .icon03{background-position:-180px -150px}
+	.nethosptal ul li:hover .icon04{background-position:-270px -150px}
+	.lading{width:100%}
+	#focus{padding-bottom:0}
+	#focus .pre{left:0}
+	#focus .next{right:0}
+	.wrap .footer p{padding:0 10%;width:80%}
+	#mutiNavbottom a{width:28%}
+	.hospLogo1 li{width:15%;margin:2% 5%; float:left;height:108px;overflow:hidden}
+	.w20{display:none}
+	.clunLi{width:46%;margin:0 2%}
+	.Map img{display:none}
+	.Map .allBtnA{position:relative;top:0;left:0;width:100%;text-align:center;margin:0 0 5%}
+	.Map a{width:19%;margin:5% 2% 0;display:inline-block}
+	.leftUS,.rightUS{float:none;width:92%;margin:0 auto 20px}
+	
+	.wrap .MainPadd{ padding-top:100px}
+	.wedo ul li{width:46%;padding:0 0 1em; height:225px;margin-right:2%;margin-left:2%;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+	.wedo ul li img{width:100%;height:auto}
+	.wedo li h2{width:100%;margin:0px auto;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+	.iphone_b{clear:both;font-size:0;height:0}
+	.footer p{width:100%}
+	.navbottom a{ width:24%!important;}
+	.Plus_Minus{width:88%}
+	#dituContent{width:100%}
+	
+	/*新加banner切换样式*/
+	
+	.homeBanner,.homeBanner .flash_box{ height:auto}
+	.split .img_box{ display:none;}
+	.split .img_box1{ display:block; }
+	.split .img_box1 img{ width:100%;}
+	.f_btn{ display:none;}
+	/*新加banner切换样式*/
+	.homeBanner{ padding-top:95px;}
+	
+	.site_banner{display:none}
+	
+}
+@media only screen and (min-width: 640px) and (max-width: 768px){
+	.cluname a{font-size:2em}
+	.newList li a{font-size:1.6em}
+	.wedo ul li{ height:215px;}
+}
+@media only screen and (max-width: 640px){
+	.wrap .MainPadd{padding:60px 0 20px}
+	/*头部*/
+	.header{padding:0}
+	div.headerMain{background:#557CB7; width:100%;}
+	.headerMain .logo{text-indent:1em;background:none;color:#FFF;font-size:2em;top:0;line-height:60px;height:60px}
+	.logoRight img,.logoRight a{display:none}
+	.headerMain .logoRight{display:block;width:60px;height:60px;right:16px;top:0;background:url(../images/menubg.gif) no-repeat center}
+	.logoRight:hover{background-color:#30405A}
+	/*菜单*/
+	#mutiNav{width:40%;position:absolute;top:60px;right:0;display:none;z-index:100000}
+	#mutiNav .lv1_ul{width:100%}
+	.nav .lv1_li{width:100% !important}
+	#mutiNav .lv1_li .lv1_tit,.lv1_home{width:100%!important}
+	#mutiNav a{display:block;padding:0}
+	.focusWarp{padding-top:60px}
+	.title cite{font-size:8px}
+	.nethosptal ul{width:92%;padding:0 4%}
+	.nethosptal ul li{width:50%;padding:0 0 1em;margin:10px 0 0;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+	.hospLogo1 li{ width:40%;background-size:100%;overflow:hidden}
+	.Plus_Minus{display:none}
+
+
+	.wedo ul li,.wedo ul li.lastLi{width:96%;height:auto;clear:both;float:none;padding:0 0 1em;margin:10px auto 0;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+	.wedo li img{width:100%}
+	.wedo li h2{width:100%; margin:0px auto;}
+
+
+	.title{padding-left:10px;height:48px;font:18px/48px 'Microsoft YaHei','微软雅黑',STXihei,'华文细黑',Heiti,'黑体'}
+	.title cite{margin:0}
+	.spanBtn{display:none;width:48px;height:48px;border-left:1px solid #DCDCDC;background:url(../images/icons.png) no-repeat;position:absolute;right:0;top:0;cursor:pointer}
+	.spanBtnprve{background-position:-450px -65px;right:49px}
+	.spanBtnnext{background-position:-445px -5px}
+	.spanBtn:hover{background-color:#557CB7;border-color:#557CB7}
+	.spanBtnprve:hover{background-position:-450px -185px}
+	.spanBtnnext:hover{background-position:-445px -125px}
+	.More{width:70px;height:48px;font:14px/48px 'Microsoft YaHei','微软雅黑',STXihei,'华文细黑',Heiti,'黑体'}
+	.clunLi{width:92%;margin:0 4% 20px}
+	.newList li a{font-size:1.2em}
+	
+	.wedo ul li{ height:auto;}
+	.clunLast{ display:block}
+	
+	.homeBanner{ padding-top:60px;}
+	/*404 维护页面*/
+	.main404{padding:20% 3%;width:88%;margin:84px auto 2em}
+	.main404 span{font-size:1.6em}
+	.qiao-invite-wrap{display:none!important}
+	
+	.big_map{ display:none !important}
+	.little_map{ display:block !important}
+}

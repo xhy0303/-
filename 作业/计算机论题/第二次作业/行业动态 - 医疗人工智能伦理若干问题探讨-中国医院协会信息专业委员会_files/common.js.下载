@@ -1,0 +1,4 @@
+﻿// 文章内容页图片父元素加样式
+		$(document).ready(function(){
+			$('.content img').parent().addClass("p_img"); 
+		});

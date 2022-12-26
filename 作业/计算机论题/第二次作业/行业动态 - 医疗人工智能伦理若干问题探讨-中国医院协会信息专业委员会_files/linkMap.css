@@ -1,0 +1,20 @@
+﻿.linkmap {
+    margin: 10px auto;
+    width: 1280px;
+    padding-left: 10px;
+    line-height: 30px;
+    background: #F7F7F7;
+    font-family: "宋体";
+    box-sizing: border-box;
+}
+.linkmap .position_ul li{
+	display: inline-block;
+}
+.linkmap .inside_nav {
+	display: none;
+}
+  @media screen and (min-width:768px) and (max-width:1280px){
+.linkmap {
+    width: 980px;
+}
+  }

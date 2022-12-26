@@ -1,0 +1,131 @@
+﻿/*------------------------底部---------------*/
+/*link*/
+.footer{
+    background: #0B0A0A;
+    margin-top: 40px;
+}
+.footer_link{
+    background: #2A282B;
+    height:50px;
+    line-height: 50px;
+display: none;
+}
+.footer p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+.footer p a{
+    color: #666;
+}
+.copyright{
+    height:40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.copyright img{
+    width:54px;
+}
+.FriendLink{
+    height: 270px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    display: none;
+}
+.linktitle {
+}
+.linktitle h1 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.linktitle h1 span {
+    font-size: 16px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.FriendLink .slick-track {
+    height: 164px;
+    padding-top: 25px;
+}
+.slick-initialized .slick-slide div div a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    box-shadow: 0px 0px 20px #ddd;
+    height: 144px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.FriendLink .slick-prev,.FriendLink .slick-next {
+    position: absolute;
+    display: block;
+    height: 45px;
+    width: 45px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    color: transparent;
+    top: 50%;
+    margin-top: -22px;
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 99;
+}
+.FriendLink .slick-prev{
+    left: -60px;
+    background: url(/Sites/Uploaded/UserUpLoad/20200217/20200217164613.png) no-repeat center center;
+  }
+ .FriendLink .slick-next{
+    right: -60px;
+    background: url(/Sites/Uploaded/UserUpLoad/20200217/20200217164642.png) no-repeat center center;
+  } 
+ .FriendLink .slick-prev:hover{
+    background: url(/Sites/Uploaded/UserUpLoad/20200217/20200217164613.png) no-repeat center center;
+  }
+.FriendLink .slick-next:hover{
+    background: url(/Sites/Uploaded/UserUpLoad/20200217/20200217164642.png) no-repeat center center;
+  }
+  @media screen and (min-width:768px) and (max-width:1280px){
+    .slick-initialized .slick-slide div div a {
+        width: 173px;
+    }
+    .slick-initialized .slick-slide div div a img {
+        width: 76%;
+    }
+    .FriendLink .slick-prev, .FriendLink .slick-next{
+        display: none !important;
+    }
+    .footer p a {
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width:768px){
+    .FriendLink{
+        display: none;
+    }
+    .footer_link {
+        background: #2A282B;
+        height: auto;
+        line-height: 27px;
+        padding: 0.2rem;
+    }
+    .copyright {
+        height: auto;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 0.2rem;
+    }
+  }
+@media only screen and (max-width: 1440px) {
+.FriendLink .slick-prev {
+    left: -33px;
+}
+.FriendLink .slick-next {
+    right: -33px;
+}
+
+}

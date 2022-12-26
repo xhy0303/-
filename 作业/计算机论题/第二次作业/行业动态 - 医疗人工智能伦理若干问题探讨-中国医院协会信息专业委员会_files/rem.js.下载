@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="applicable-device" content="pc,mobile" />
+<title>
+404找不到-中国医院协会信息专业委员会</title>
+<meta name="keywords" />
+<meta name="description" />
+
+
+
+
+    <link href="/Content/Areas/Common/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Areas/Common/css/message.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Areas/Common/css/article.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/Areas/Common/css/nav.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Common/control.js" type="text/javascript"></script>
+    <script src="/Content/Areas/Common/scripts/tags.js" type="text/javascript"></script>
+
+    
+    <link href="/Content/Awesome/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Awesome/Awesome.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/Awesome/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Awesome/jquery.form.js" type="text/javascript"></script>
+    <script src="/Scripts/Awesome/Awesome.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.unobtrusive-ajax.js" type="text/javascript"></script>
+    <script src="/Scripts/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    
+
+    
+
+    
+</head>
+<body>
+    <div class="wrap">
+        <link href="/Content/Areas/Common/css/header.css" rel="stylesheet" type="text/css" />
+
+<script src="/Content/Areas/Common/scripts/rem.js" type="text/javascript"></script>
+<script src="/Content/Areas/Common/scripts/index.js" type="text/javascript"></script>
+
+<!-- /header -->
+
+    <div class="header">
+        <div class="header-bot">
+            <div class="inner fix">
+                <div class="logo fl">
+                   <a href="/"><img src="/Sites/Uploaded/UserUpLoad/20200217/20200217122536.png" alt="中国医院协会信息专业委员会"></a> 
+                </div>
+                <div class="LoginSearch fr">
+                    <div class="dl">
+                        
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                        <div class="clearit"></div>
+                    </div>
+                    <div class="serch-box">
+<form action="/Hospitals/Search" method="post">                        <input type="text"  name="search" id="search" placeholder="请输入您要搜索的内容..." class="searchtxt fl">
+                        <input name="" value="" class="searchbtn" type="submit" />
+</form>                    </div>
+                    <div class="clearit"></div>
+                </div>
+                <div class="clearit"></div>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript" charset="utf-8">
+        function getRem(pwidth,prem){
+           var html = document.getElementsByTagName("html")[0];
+           var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+           html.style.fontSize = oWidth/pwidth*prem + "px";
+       }
+       window.onresize = function(){
+           getRem(750,100)
+       };
+       $(function(){
+           getRem(750,100);
+       })
+   </script>
+<script type="text/javascript" charset="utf-8">
+//  $(function () {
+//         $('a').each(function() {
+//             $(this).attr('href', '/News/Main?siteId=58');
+//         });
+//  });
+</script>
+<!-- /header -->
+        <div class="clearit"></div>
+        
+<link href="/Content/Areas/Common/css/nav.css" rel="stylesheet" type="text/css" />
+<script src="/Content/Areas/Common/scripts/nav.js" type="text/javascript"></script>
+
+<div class="nav">
+    <!--手机导航附加类名-->
+<div class="sy_nav inner">
+    <div class="phone_header">
+        <ul class="phone-btn">
+            <li><a class="phone-search" href="/Hospitals/Search"></a></li>
+            <li><a class="phone-menu"></a></li>
+        </ul>
+    </div>
+    <!--搜索-->
+    <div class="search_con">
+            <form action="/Hospitals/Search?searchTypeId=1" method="post">
+            <input class="searchtxt" id="search" name="search" type="text" value="">
+            <input name="" value="" class="searchbtn" type="submit">
+        </form>
+    </div>
+    <div class="phone_container" id="phone_container">
+
+
+                    <ul class="sy1_ul">
+            	<div class="sy2_inside">
+	                    <li class="sy1_li homeLi">
+	                        <a class="homeA sy1_tit" href="/">
+                                <img src="/Sites/Uploaded/UserUpLoad/20200217/20200217152616.png" alt="">
+                                首 页</a>
+	                    </li>
+	                	                    <li class="sy1_li num0">   
+	                        <a class="next_open"></a>
+	                        <a id="54" class="sy1_tit " href="/Html/News/Main/52.html" target="_self"><span class="navspan">CHIMA介绍</span></a>    
+
+	                                    <ul class="sy2_ul">
+            	<div class="sy2_inside">
+	                	                    <li class="sy2_li num0">   
+	                        <a class="next_open"></a>
+	                        <a id="60" class="sy2_tit " href="/Html/News/Columns/1/Index0.html" target="_self"><span class="navspan">CHIMA简介</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num1">   
+	                        <a class="next_open"></a>
+	                        <a id="61" class="sy2_tit " href="/Html/News/Columns/2/Index0.html" target="_self"><span class="navspan">CHIMA委员</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num2">   
+	                        <a class="next_open"></a>
+	                        <a id="62" class="sy2_tit " href="/Html/News/Columns/3/Index0.html" target="_self"><span class="navspan">学术活动</span></a>    
+
+	                           
+	                    </li>
+                	<div class="clearit"></div>
+                </div>
+
+                <div class="sy2_ul_div">
+                	
+
+                </div>
+                <div class="dl_btn">
+                    
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                 </div>
+            	<div class="clearit"></div>
+            </ul>
+   
+	                    </li>
+	                    <li class="sy1_li num1">   
+	                        <a class="next_open"></a>
+	                        <a id="55" class="sy1_tit " href="/Html/News/Main/53.html" target="_self"><span class="navspan">新闻中心</span></a>    
+
+	                                    <ul class="sy2_ul">
+            	<div class="sy2_inside">
+	                	                    <li class="sy2_li num0">   
+	                        <a class="next_open"></a>
+	                        <a id="63" class="sy2_tit " href="/Html/News/Columns/4/Index0.html" target="_self"><span class="navspan">政策法规</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num1">   
+	                        <a class="next_open"></a>
+	                        <a id="64" class="sy2_tit " href="/Html/News/Columns/5/Index0.html" target="_self"><span class="navspan">通知公告</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num2">   
+	                        <a class="next_open"></a>
+	                        <a id="65" class="sy2_tit " href="/Html/News/Columns/6/Index0.html" target="_self"><span class="navspan">专家观点</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num3">   
+	                        <a class="next_open"></a>
+	                        <a id="81" class="sy2_tit " href="/Html/News/Columns/34/Index0.html" target="_self"><span class="navspan">案例分享</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num4">   
+	                        <a class="next_open"></a>
+	                        <a id="66" class="sy2_tit " href="/Html/News/Columns/7/Index0.html" target="_self"><span class="navspan">行业动态</span></a>    
+
+	                           
+	                    </li>
+                	<div class="clearit"></div>
+                </div>
+
+                <div class="sy2_ul_div">
+                	
+
+                </div>
+                <div class="dl_btn">
+                    
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                 </div>
+            	<div class="clearit"></div>
+            </ul>
+   
+	                    </li>
+	                    <li class="sy1_li num2">   
+	                        <a class="next_open"></a>
+	                        <a id="56" class="sy1_tit " href="/Html/News/Main/54.html" target="_self"><span class="navspan">资料中心</span></a>    
+
+	                                    <ul class="sy2_ul">
+            	<div class="sy2_inside">
+	                	                    <li class="sy2_li num0">   
+	                        <a class="next_open"></a>
+	                        <a id="69" class="sy2_tit " href="/Html/News/Columns/10/Index0.html" target="_self"><span class="navspan">调查报告</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num1">   
+	                        <a class="next_open"></a>
+	                        <a id="70" class="sy2_tit " href="/Html/News/Columns/11/Index0.html" target="_self"><span class="navspan">会议课件</span></a>    
+
+	                           
+	                    </li>
+                	<div class="clearit"></div>
+                </div>
+
+                <div class="sy2_ul_div">
+                	
+
+                </div>
+                <div class="dl_btn">
+                    
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                 </div>
+            	<div class="clearit"></div>
+            </ul>
+   
+	                    </li>
+	                    <li class="sy1_li num3">   
+	                        <a class="next_open"></a>
+	                        <a id="59" class="sy1_tit " href="/Html/News/Main/57.html" target="_self"><span class="navspan">品牌活动</span></a>    
+
+	                                    <ul class="sy2_ul">
+            	<div class="sy2_inside">
+	                	                    <li class="sy2_li num0">   
+	                        <a class="next_open"></a>
+	                        <a id="75" class="sy2_tit " href="/Html/News/Columns/16/Index0.html" target="_self"><span class="navspan">CHIMA大会</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num1">   
+	                        <a class="next_open"></a>
+	                        <a id="76" class="sy2_tit " href="/Html/News/Columns/17/Index0.html" target="_self"><span class="navspan">走进医院</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num2">   
+	                        <a class="next_open"></a>
+	                        <a id="77" class="sy2_tit " href="/Html/News/Columns/18/Index0.html" target="_self"><span class="navspan">西部行</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy2_li num3">   
+	                        <a class="next_open"></a>
+	                        <a id="78" class="sy2_tit " href="/Html/News/Columns/19/Index0.html" target="_self"><span class="navspan">安全训练营</span></a>    
+
+	                           
+	                    </li>
+                	<div class="clearit"></div>
+                </div>
+
+                <div class="sy2_ul_div">
+                	
+
+                </div>
+                <div class="dl_btn">
+                    
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                 </div>
+            	<div class="clearit"></div>
+            </ul>
+   
+	                    </li>
+	                    <li class="sy1_li num4">   
+	                        <a class="next_open"></a>
+	                        <a id="57" class="sy1_tit " href="/Interactions/Companys/Collect" target="_self"><span class="navspan">VendorClub</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy1_li num5">   
+	                        <a class="next_open"></a>
+	                        <a id="82" class="sy1_tit " href="http://2022.chima.org.cn/" target="_blank"><span class="navspan">CHIMA2022大会</span></a>    
+
+	                           
+	                    </li>
+	                    <li class="sy1_li last num6">   
+	                        <a class="next_open"></a>
+	                        <a id="79" class="sy1_tit " href="https://djt.chima.org.cn" target="_blank"><span class="navspan">CHIMA大讲堂</span></a>    
+
+	                           
+	                    </li>
+                	<div class="clearit"></div>
+                </div>
+
+                <div class="dl_btn">
+                    
+
+<span id="ajax_div__LoggingStatus_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__LoggingStatus_1_0_0_988', '/PartialView/_Plugin/_LoggingStatus?siteId=1');
+    </script>
+</span>
+                 </div>
+            	<div class="clearit"></div>
+            </ul>
+
+        <div class="clearit"></div>
+    </div>
+</div>
+
+</div>
+
+
+        <div class="clearit"></div>        
+        
+<style>
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .btn_404 a
+    {
+        display: block;
+        outline: none;
+        background: url(/Content/Areas/Common/images/promp/gohome.jpg) no-repeat 0px -30px;
+        width: 79px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #333;
+        font-size: 12px;
+        text-decoration: none;
+        float: left;
+        margin: 0 10px;
+    }
+    .btn_404 a:hover
+    {
+        background: url(/Content/Areas/Common/images/promp/gohome.jpg) no-repeat center top;
+        color: #FFF;
+    }
+    .sorry_404
+    {
+        background: url(/Content/Areas/Common/images/promp/sorry_bg.jpg) no-repeat 0 0px;
+        width: 438px;
+        height: 106px;
+        margin: 0px auto;
+        padding: 270px 0 0 520px;
+        overflow: hidden;
+    }
+</style>
+<div class="sorry_404">
+    <div class="btn_404">
+        <a href="/">返回首页</a> 
+    </div>
+</div>
+
+        <div class="clearit"></div>          
+        <link href="/Content/Areas/Common/css/footer.css" rel="stylesheet" type="text/css" />
+
+        
+        <div class="clearit"></div>      
+<div class="footer">
+        <div class="footer_link">
+            <p>友情链接：
+                <a href="">中国医院协会、</a>
+                <a href="">HLMSS、</a>
+                <a href="">IHE、</a>
+                <a href="">heaithcareitnews、</a>
+                <a href="">中国卫生信息学会、</a>
+                <a href="">北京卫生信息技术协会、</a>
+                <a href="">广东省医院协会信息管理专业委员会、</a>
+                <a href="">云南省医院协会信息管理专业委员会</a>
+            </p>
+        </div>
+        <div class="copyright">
+            <p>中国医院协会信息专业委员会 版权所有   <a href="http://www.beian.miit.gov.cn/" target="_blank">Copyright © 2020 CHIMA. All Rights Reserved. 京ICP备05028192号-8</a>　技术支持：<a href="http://www.54doctor.net/"><img src="/Content/Areas/Common/images/20190320102815.png"></a></p>
+            <p style="display: none;">
+
+<span id="ajax_div__VisitCount_1_0_0_988">
+    <script type="text/javascript">
+        GetAjaxContentByUrl('ajax_div__VisitCount_1_0_0_988', '/PartialView/_Plugin/_VisitCount?siteId=1');
+    </script>
+</span></p>              
+        </div>
+</div>
+
+  
+
+        <div class="clearit"></div>        
+    </div>
+</body>
+</html>

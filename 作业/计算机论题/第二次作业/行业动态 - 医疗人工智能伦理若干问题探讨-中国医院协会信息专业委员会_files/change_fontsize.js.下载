@@ -1,0 +1,8 @@
+﻿// JavaScript Document
+//控制字体大小，文章列表页，内容页用
+function changeSize(size) {
+	var canSize = parseInt($("#zoom").css("fontSize"));
+	if(size=="larger")$("#zoom").css("fontSize",canSize+1);
+	if(size=="smaller")$("#zoom").css("fontSize",canSize>10?(canSize-1):10);
+	if(typeof(size)=="number")$("#zoom").css("fontSize",size);
+}

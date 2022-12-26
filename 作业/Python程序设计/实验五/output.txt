@@ -1,0 +1,3089 @@
+s=[0]*3
+print(s)
+s[0]+=1
+print(s)
+
+s=['']*3
+print(s)
+s[0]+='a'
+print(s)
+
+s=[[]]*3
+print(s)
+s[0]+=[1]
+print(s)
+
+print(id(s[0]))
+print(id(s[1]))
+print(id(s[2]))
+'''class Clock(object):
+    def __init__(self, time):
+        self.time = time
+    def print_time(self):
+        time = "6:30"
+        print(self.time)
+
+
+clock = Clock("5:30")
+clock.print_time()'''
+
+'''class Clock(object):
+     def __init__(self, time):
+        self.time = time
+     def print_time(self, time):
+        print (time)
+clock = Clock("5:30")
+clock.print_time("10:30")'''
+
+
+class Clock(object):
+     def __init__(self, time):
+        self.time = time
+     def print_time(self):
+        print(self.time)
+boston_clock = Clock("5:30")
+paris_clock = boston_clock
+paris_clock.time = "10:30"
+boston_clock.print_time()
+paris_clock.print_time()import string
+def removePunctuations(word):
+    for ch in word:
+         if ch in string.punctuation:
+            word = word.replace(ch, " ")
+    return word
+
+count=dict.fromkeys(["and", "as", "assert", "break", "class",
+"continue", "def", "del", "elif", "else",
+"except", "False", "finally", "for", "from",
+"global", "if", "import", "in", "is", "lambda",
+"None", "nonlocal", "not", "or", "pass", "raise",
+"return", "True", "try", "while", "with", "yield"])
+
+for i in count:
+    count[i]=0
+
+with open('nARQ.py') as data:
+     da=removePunctuations(data.read())
+     for word in da.split():
+         if word in count.keys():
+             count[word]+=1;
+
+
+count_ordered=sorted(count.items(),key=lambda x:x[1],reverse=True)
+
+print(count_ordered)import string
+def removePunctuations(word):
+    for ch in word:
+         if ch in string.punctuation:
+            word = word.replace(ch, " ")
+    return word
+
+count=dict.fromkeys(["and", "as", "assert", "break", "class",
+"continue", "def", "del", "elif", "else",
+"except", "False", "finally", "for", "from",
+"global", "if", "import", "in", "is", "lambda",
+"None", "nonlocal", "not", "or", "pass", "raise",
+"return", "True", "try", "while", "with", "yield"])
+
+for i in count:
+    count[i]=0
+
+with open('nARQ.py') as data:
+     da=removePunctuations(data.read())
+     for word in da.split():
+         if word in count.keys():
+             count[word]+=1;
+
+
+count_ordered=sorted(count.items(),key=lambda x:x[1],reverse=True)
+
+print(count_ordered)'''t=(1,2,3)
+t.append(4)
+t.remove(0)
+t[0]=1'''
+
+'''t1=(1,2,3,7,1,0,5)
+t2=(1,2,5)
+t1=t2[:]
+print(t1,t2)'''
+
+t=(1,2,2,7,8,-2,5)
+print(t[3])
+print(t[1:3])
+print(t[-1:-3])
+print(t[-1:-3:-1])
+print(t[-1::-3])
+print(t[:-1:3])
+print(t[3:-1:3])
+print(t[3:-1:-3])
+
+x=input("Pleaseinput: ")
+for i in range(len(x)):
+    print(x[len(x)-i-1],end='')import math
+class RegularPolygon:
+    __n=3
+    __side=1
+    __x=0
+    __y=0
+    def __init__(self,n,side,x,y):
+        self.__n=n
+        self.__side=side
+        self.__x=x
+        self.__y=y
+    def getPerimeter(self):
+        return self.__n*self.__side
+    def getArea(self):
+        return ((self.__n*pow(self.__side,2)*math.sin((2*math.pi)/self.__n))/(4*(1-math.cos((2*math.pi)/self.__n))))
+    def distanceToPolygon(self,a):
+        return math.sqrt(pow(self.__x-a.getX(),2)+pow(self.__y-a.getY(),2))
+
+    def getX(self):
+        return self.__x
+    def getY(self):
+        return self.__y
+
+
+a=RegularPolygon(3,1,1,1)
+b=RegularPolygon(6,2,5,6)
+print(a.distanceToPolygon(b))
+print(a.getArea())
+print(b.getArea())
+print(a.getPerimeter())
+print(b.getPerimeter())'''def f(n):
+    n=5
+    print(id(n))
+m = 2
+f(m)
+print(id(m))
+print(m)'''
+
+'''def f(L):
+    L[0] = 42
+    print(L(0))
+L = [1,2,3]
+f(L)
+print(L[0])'''
+
+'''def f():
+    n = 5
+    #return 1
+n=4
+n=f()
+print(n)'''
+
+'''def f(L):
+    L2 = L
+    L = [1,2]
+    L[0] = 5
+    print(L)
+L = [2,3]
+print(L2)'''
+
+D={"what":22, "are":11, "you":14, "doing":5, "next":9, "Saturday?":4}
+sum = 0
+for x in D.items():
+    sum =sum + x[1]
+print(sum)x=int(input("Enter an integer: "))
+a=0
+b=0
+c=0
+print("Is %d divisible by 5 and 7? "%(x),end='')
+if x%5==0 and x%7==0:
+    print("True")
+    a=1
+else:
+    print("False")
+
+print("Is %d divisible by 5 or 7? "%(x),end='')
+if x%5==0 or x%7==0:
+    print("True")
+    b=1
+else:
+    print("False")
+
+print("Is %d divisible by 5 or 7, but not both? " % (x), end='')
+if b==1 and a!=1:
+    print("True")
+else:
+    print("False")class Stack:
+    __content=[]
+    __size=0
+    __current= len(__content)
+    def __init__(self,size):
+        self.__size=size
+    def isempty(self):
+        if self.__current==0:
+            return True
+        else:
+            return False
+    def empty(self):
+        self.__content.clear()
+        self.__current=0
+    def setSize(self,size):
+        self.__size=size
+        for i in range(len(self.__content)):
+            if i>self.__size:
+                self.__content.remove(self.__content[i])
+    def isFull(self):
+        if(self.__size==self.__current):
+            return True
+        else:
+            return False
+
+    def push(self,value):
+        self.__current+=1
+        self.__content.append(value)
+    def pop(self):
+        self.__content.remove(self.__content[self.__current-1])
+        self.__current-=1
+
+    def show(self):
+        print(self.__content)
+
+
+s=Stack(5);
+while(not s.isFull()):
+    print("Stack is not full yet. ")
+    print("To input more value, input your value. Or type -1 to pop. ")
+    tmp=int(input())
+    if(tmp==-1):
+        s.pop()
+    else:
+        s.push(tmp)
+    s.show()
+print("Stack is full now. ")x = int(input())
+sum:str=""
+sign=0
+if x<0:
+    x*=-1
+    sign=1
+while x > 0:
+    tmp1=int(x/7)
+    tmp2=int(x%7)
+    sum=str(tmp2)+sum
+    x=tmp1
+if sign==1:
+    sum="-"+sum
+print(sum)import time
+start = time.time()
+### your codes
+n=0
+while(n<10000000):
+    '''a=[1,2,3]
+    a+=[n]
+    n+=1'''
+    a=[1,2,3]
+    a.append(n)
+    n+=1
+print(time.time()-start)x=int(input("Please input N: "))
+sign=0
+for i in range(pow(10,x-1),pow(10,x)):
+    sum=0
+    tmp=i
+    while tmp>0:
+        sum+=pow(tmp%10,x)
+        tmp//=10
+    if sum==i:
+        print(str(sum)+" ",end='')
+        sign=1
+if sign==0:
+    print("[]")class China:
+    def __init__(self, given, family):
+        self.given = given
+        self.family = family
+
+    def __str__(self):
+        return self.given + ' ' + self.family + '\n' + self.get_description()
+
+    def get_description(self):
+        return 'From China'
+
+    def execute(self):
+        print(self.family)
+
+
+class Guangdong(China):
+    def __init__(self):
+        China.__init__(self, 'Ming', 'Li')
+
+
+class England(China):
+    def __init__(self):
+        China.__init__(self, 'David', 'Beckham')
+
+    def get_description(self):
+        return 'From England'
+
+
+def test_person(person):
+    print(person)
+
+
+ming = Guangdong()
+ming.execute()
+test_person(ming)
+test_person(England())
+'''def merge(list1,list2):
+    list=list1+list2
+    list.sort()
+    return list'''
+
+def merge(list1,list2):
+    list=[]
+    while(len(list1)!=0 and len(list2)!=0):
+        if list1[0]<list2[0]:
+            list.append(list1[0])
+            list1.remove(list1[0])
+        else:
+            list.append(list2[0])
+            list2.remove(list2[0])
+    if len(list1)!=0:
+        list+=list1
+    else:
+        list+=list2
+    return list
+
+list1=[2,34]
+list2=[0,12,435]
+list=merge(list1,list2)
+print(list)a=int(input("Please input a: "))
+for i in range(1,a+1):
+    print(i,(i+1),pow(i,i+1))import math
+import numpy as np
+
+'''mysqrt = [math.sqrt(x) for x in range(0,5)]
+mycrt = [x**(1/3) for x in range(0,5)]
+npData = np.array(mysqrt)
+print("The shape:", npData.shape)
+print("The dimensionality:", npData.ndim)
+print("The type:", npData.dtype)
+
+twoDarray = np.array([mysqrt, mycrt])
+print("The shape:", twoDarray.shape)
+print("The dimensionality:", twoDarray.ndim)
+print("The type:", twoDarray.dtype)
+print(twoDarray)
+'''
+
+
+'''zeros = np.zeros(3)
+zMat = np.zeros((4,3))
+ones = np.ones(3)
+oMat = np.ones((3,2))
+diag = np.eye(4)
+rng = np.arange(5)
+dm = np.diag(rng)
+print(dm.shape)
+zMat_re = zMat.reshape(6,2)'''
+
+'''A = np.random.randint(0,10, size = (3,2))
+B = np.random.randint(0,10, size = (3,3,3))
+C = np.random.randint(0,10, size = (3,1))
+print(A**2)
+print(np.sqrt(A))
+print(A + C)
+print(B + C)
+B[:, 0:2 , 0:2 ] -= 20
+print(B)
+'''
+from numpy import linalg
+
+A = np.array([[2, 1, -2], [1, -1, -1], [1, 1, 3]])
+b = np.array([3, 0, 12])
+x = linalg.solve(A, b)
+print(x)
+def match_pattern(list1,list2):
+    for i in range(len(list1)):
+        if list1[i:i+len(list2)]==list2:
+            print(True)
+            return
+    print(False)
+list1 = [4, 10, 2, 3, 50, 100]
+list2 = [3, 2, 50]
+list3 = [2, 3, 50]
+list4 = [2, 3, 40]
+match_pattern(list1, list2) # return False
+match_pattern(list1, list3) # return True
+match_pattern(list1, list4) # return False
+N=int(input("Please input n: "))
+for i in range(N):
+    tmp=N-i
+    sign=0
+    for n in range(2,tmp):
+        if tmp%n==0:
+            sign=1
+            break
+    if sign==1:
+        sum=1
+        for n in range(1,tmp+1):
+            sum*=n
+        print("%d!: %d"%(tmp,sum))import numpy as np
+
+matrix=np.random.rand(4,4)*10
+a,c=np.split(matrix,2)
+a,b=np.split(a,2,1)
+c,d=np.split(c,2,1)
+print(matrix)
+
+result=np.array([np.mean(a),np.mean(b),np.mean(c),np.mean(d)])
+result=np.reshape(result,(2,2))
+print(result)arr=input()
+children=[int(n) for n in arr.split()]
+arr=input()
+size=[int(n) for n in arr.split()]
+children.sort()
+size.sort()
+count=0
+for i in range(len(size)):
+    for n in range(len(children)):
+        if size[i]>=children[n]:
+            count+=1
+            children.remove(children[n])
+            break
+
+print(count)
+a=list(input())
+b=list(input())
+if len(a)!=len(b):
+    print(-1)
+else:
+    sum=0
+    for i in range(len(a)):
+        sum+=(int(a[i])*int(b[i]))
+    print(sum)import numpy as np
+import matplotlib.pyplot as plt
+from PIL import Image
+
+def GuassAverageMaskProcessing(pixels):
+    Mask=[1,2,1,
+          2,4,2,
+          1,2,1]
+    mid=np.array(pixels)
+    Total=16
+    k=1
+    for i in range(k,690-k):
+        for j in range(k,690-k):
+            tmp=0
+            for m in range(-k,k+1):
+                for n in range(-k,k+1):
+                    tmp=tmp+(int(pixels[i+m][j+n])*Mask[(m+k)*3+(n+k)])
+            mid[i][j]=(tmp//Total)
+    mid=np.reshape(mid,(690,690))
+    result=Image.fromarray(mid)
+    result.save('GuassProcessed.png')
+
+image=Image.open('sample.jpg')
+pixels=np.array(image.convert('L'))
+result=Image.fromarray(pixels)
+result.save('img_gray.png')
+
+result=Image.fromarray(pixels[0:int(len(pixels)/2):])
+result.save('img_crop.png')
+
+for i in range(690):
+    for j in range(690//2):
+        tmp=pixels[i][j]
+        pixels[i][j]=pixels[i][689-j]
+        pixels[i][689-j]=tmp
+result=Image.fromarray(pixels)
+result.save('img_flip_vert.png')
+
+GuassAverageMaskProcessing(pixels)
+#高斯模糊
+
+
+
+def check(lst):
+    for i in range(int(len(lst)/2)):
+        if lst[i]!=lst[len(lst)-1-i]:
+            return False
+    return True
+
+
+def is_almost_symmetric(lst):
+    for i in range(len(lst)):
+        for n in range(i+1,len(lst)):
+            lst[i],lst[n]=lst[n],lst[i]
+            if check(lst):
+                return True
+    return False
+
+arr=input("Please input a list: ")
+list=[int(n) for n in arr.split()]
+print(is_almost_symmetric(list))from itertools import combinations
+import numpy as np
+def sum0(list):
+    num=len(list)
+    for i in range(len(list)):
+        for n in combinations(list,num):
+            tmp=np.array(n)
+            if tmp.sum()==0:
+                return True
+        num-=1
+    return False
+
+print(sum0([-3,11, 21, 5, 10, 11, 2, 1]))
+print(sum0([2, 3, 4, 5, 6, 7, 8, 9]))from time import time
+def timed(fn): #fn stands for function
+ # 你的代码
+    def count():
+        start=time()
+        fn()
+        print(time()-start)
+    return count
+
+
+@timed
+def test_plus():
+    result = []
+    for i in range(100000):
+        result = result + [i]
+
+@timed
+def test_append():
+    result = []
+    for i in range(100000):
+        result.append(i)
+
+test_plus()
+test_append()
+from turtle import *
+ 
+def go_to(x, y):  
+  up()
+  goto(x, y)
+  down()
+ 
+def person(x,y,r): 
+  head(x,y,r)
+  eye(x,y,r)
+  mouth(x,y)
+  leg(x,y)
+  hand(x,y)
+  
+def head(x,y,r):  
+  go_to(x,y)
+  speed(6)        
+  circle(r)
+
+def eye(x,y,r):
+  go_to(x-40,y+150)
+  forward(30)       
+  go_to(x-40,y+130)
+  right(90)         
+  circle(r/10)
+  go_to(x+40,y+150)
+  left(90)
+  forward(30)
+  right(90)
+  go_to(x+40,y+130)
+  circle(r/10)
+  left(90)       
+
+def mouth(x,y):
+  go_to(x-5,y+50)
+  right(45)
+  forward(30)
+  left(90)
+  forward(30)
+
+def leg(x,y):
+  go_to(x-5,y)
+  right(135)
+  forward(180)
+  right(30)
+  forward(100)
+  left(120)
+  go_to(x,y-180)
+  forward(100)
+  right(120)
+  forward(100)
+  left(120)
+ 
+ 
+def hand(x,y):
+  go_to(x,y-60)
+  forward(100)
+  left(60)
+  forward(80)
+  go_to(x, y - 90)
+  right(60)
+  forward(100)
+  right(60)
+  forward(80)
+  left(60)
+ 
+ 
+def big_Circle(size):
+  speed(1)
+  for i in range(150):
+    forward(size)
+    right(0.3)
+
+def line(size):
+  speed(1)
+  forward(51*size)
+ 
+def small_Circle(size):
+  speed(1)
+  for i in range(210):
+    forward(size)
+    right(0.786)
+      
+ 
+def heart(x, y, size):
+  go_to(x, y)
+  left(150)
+  begin_fill()
+  line(size)
+  big_Circle(size)
+  small_Circle(size)
+  left(120)
+  small_Circle(size)
+  big_Circle(size)
+  line(size)
+  end_fill()
+ 
+def show_figure():
+  pensize(2)
+  color('black', 'green')
+  getscreen().tracer(10, 0) 
+
+  person(150, 95, 100)
+  heart(100, 100, 0.8)
+
+  done()   
+
+
+if __name__ == "__main__": 
+  show_figure()
+
+def func1(n):
+    return int(n)>0
+def func2(str):
+    return str=='world'
+def func3(str):
+    return str!='method'
+def func4(n):
+    if n%3==0 or n%5==0:
+        return True
+    else:
+        return False
+
+print(list(filter(func1,['12', '-1', '0'])))
+print(list(filter(func2,['hello', 'world'])))
+print(list(filter(func3,['technology', 'method', 'technique'])))
+print(list(filter(func4,range(20))))def generate_triangles():
+    i=1
+    sum=0
+    while True:
+        sum+=i
+        yield sum
+        i+=1
+
+def generate_triangles_under(n):
+    g=generate_triangles()
+    tmp=g.__next__()
+    while tmp<n:
+        print(tmp)
+        tmp=g.__next__()
+
+
+generate_triangles_under(100)it = iter(range(100))
+
+66 in it # => True
+print(next(it)) # => ??
+print(33 in it) # => ??
+print(next(it)) # => ??print((lambda val: val % 2)(5))
+print((lambda x, y: x ^ y)(3, 8))
+print((lambda s: s.strip().lower()[1:4])(' PyTHon'))x=float(input("Enter the radius of a cylinder:"))
+y=float(input("Enter the length of a cylinder:"))
+Pi=3.1415926
+area=x*x*Pi
+volumn=area*y
+print("The area is %.3f" % (area))
+print("The volume is %.3f"%volumn)import math
+import Triangle
+
+def emirp(N):
+    f=open('FirstN_Emirp_Numbers.txt','w')
+    count = 1
+    for i in range(1,N+1):
+        tmp=str(i)
+        sign=0
+        for n in range(int(len(tmp)/2)):
+            if tmp[n]!=tmp[len(tmp)-n-1]:
+                sign=1
+                break
+        flag=0
+        if sign==1:#不是回文数
+            for n in range(2,int(math.sqrt(i))+1):
+                if i%n==0:#不是质数就跳出
+                    flag=1
+                    break
+            if flag==1:
+                continue
+            else:
+                mid=i
+                rev=0
+                while mid>0:
+                    rev=(rev*10)+(mid%10)
+                    mid//=10
+                for n in range(2,int(math.sqrt(rev))+1):
+                    if rev%n==0:
+                        flag=1
+                        break
+                if flag==1:
+                    continue
+                else:
+                    if count%10!=0:
+                        #print(i,end='')
+                        f.write(str(i)+" ")
+                        count+=1
+                    else:
+                        #print(i)
+                        f.write(str(i)+'\n')
+                        count+=1
+
+def checkSumOfSquareNumbers(c):
+    for i in range(1,c):
+        for n in range(i+1,c):
+            if pow(i,2)+pow(n,2)==pow(c,2):
+                print("True, %d^2+%d^2=%d^2"%(i,n,c))
+                return
+    print("False")
+
+def twoSumClosest(nums,target):
+    min=target-int(nums[0])-int(nums[1])
+    for i in range(len(nums)):
+        for n in range(i+1,len(nums)):
+            if min>target-int(nums[i])-int(nums[n]):
+                min=target-int(nums[i])-int(nums[n])
+    print(min)
+
+def owlRow(num):
+    empty = '      '
+    lineA = ' {o,o}'
+    lineB = ' /)_) '
+    lineC = ' " "  '
+    arr=[empty,lineA,lineB,lineC]
+    for i in range(len(arr)):
+        for n in range(num):
+            print(arr[i],end='')
+        print()
+
+
+if __name__=="__main__":
+    owlRow(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '''N=int(input("Please input N: "))
+    emirp(N)'''
+
+    '''c = int(input("Please input c: "))
+    checkSumOfSquareNumbers(c)'''
+
+    '''arr = input("Please input nums: ")
+    nums = [int(n) for n in arr.split()]
+    target = int(input("Please input target: "))
+    twoSumClosest(nums, target)'''
+    #owlRow(5)
+
+    '''arr = input("Please input sides: ")
+    sides = [int(n) for n in arr.split()]
+    if Triangle.isValid(sides[0],sides[1],sides[2]):
+        Triangle.area(sides[0],sides[1],sides[2])
+        Triangle.perimeter(sides[0],sides[1],sides[2])'''
+def reverse(str):
+    return str[::-1]
+def process1(x):
+    return (x,x*x,x*x*x)
+def process2(num):
+    return num[0]*num[1]
+
+l1 = ['12', '-2', '0']
+print(list(map(int,l1)))
+l2=['hello', 'world']
+print(list(map(len,l2)))
+print(list(map(reverse,l2)))
+
+print(list(map(process1,range(2,6))))
+print((list(map(process2,zip(range(2,5),range(3,9,2))))))def matrix_dim(list):
+    return [len(list),len(list[0])]
+
+def mult_M_v(M,v):
+    list=[]
+    for i in range(len(M)):
+        sum=0
+        for n in range(len(v)):
+            sum+=(v[n][0]*M[i][n])
+        list.append([sum])
+    return list
+
+def transpose(M):
+    list=[]
+    for i in range(len(M[0])):
+        tmp=[]
+        for n in range(len(M)):
+            tmp.append(M[n][i])
+        list.append(tmp)
+    return list
+
+def largest_col_sum(M):
+    max=0
+    for i in range(len(M[0])):
+        tmp=0
+        for n in range(len(M)):
+            tmp+=M[n][i]
+        if i==0 or tmp>max:
+            max=tmp
+    return max
+
+def switch_columns(M, i, j):
+    for n in range(len(M)):
+        M[n][i],M[n][j]=M[n][j],M[n][i]
+    return M
+def matrix_dim(list):
+    return [len(list),len(list[0])]
+
+def mult_M_v(M,v):
+    list=[]
+    for i in range(len(M)):
+        sum=0
+        for n in range(len(v)):
+            sum+=(v[n][0]*M[i][n])
+        list.append([sum])
+    return list
+
+def transpose(M):
+    list=[]
+    for i in range(len(M[0])):
+        tmp=[]
+        for n in range(len(M)):
+            tmp.append(M[n][i])
+        list.append(tmp)
+    return list
+
+def largest_col_sum(M):
+    max=0
+    for i in range(len(M[0])):
+        tmp=0
+        for n in range(len(M)):
+            tmp+=M[n][i]
+        if i==0 or tmp>max:
+            max=tmp
+    return max
+
+def switch_columns(M, i, j):
+    for n in range(len(M)):
+        M[n][i],M[n][j]=M[n][j],M[n][i]
+    return M
+#!/usr/bin/env python
+#
+# Copyright 2013 Yue Li
+# Copyright 2014 Lizhao You
+#
+import math,random,time,struct
+import socket,sys,threading
+import Image, numpy, argparse
+import collections
+
+import mac_frame_handler
+from mac_params import string_to_hex_list
+from mac_params import ENDNODE_FRAME_FORMAT, MAC_HEADER_LEN, CRC_LEN
+from mac_params import TOTAL_ARQ_NSEQ as NSEQ
+from mac_params import TOTAL_MAC_NSEQ as NSEQ_MAC
+
+global WSIZE
+WSIZE = 0
+
+global fwriter
+fwriter = None
+
+# /////////////////////////////////////////////////////////////////////////////
+#                            Buffer Controller for MAC
+# /////////////////////////////////////////////////////////////////////////////
+# 1) Manage tx buffer from APP and to PHY;
+# 2) Manage rx buffer from PHY and to APP;
+# 3) Choose ARQ mode: NULL, E2E-SW, E2E-GBN, E2E-SR;
+
+PRINT_BUFFER_FLAG = 0
+
+class BufferController:
+  def __init__(self,content,node,framebytes,windowsize=8,mode=1,dack=False,infile=None,prt_msgq=None):
+    self.c = content
+    if type(self.c) == 'str':
+      self.c = map(ord,self.c)
+    self.frame = mac_frame_handler.EndnodeFrame(framebytes,node)
+    self.FORMAT = self.frame.f
+    self.pktsize = self.frame.pktsize
+    self.headersize = self.frame.headersize
+    self.npkt = float(len(self.c))/self.pktsize
+    self.npkt = int(math.ceil(self.npkt))
+
+    self.node = node
+    self.arq_mode = mode
+    self.NULL = 129
+
+    global fwriter
+    #if self.node == 'A':
+    #  fwriter=open('ARQ_TXLOG_A.dat', 'w')
+    #if self.node == 'B':
+    #  fwriter=open('ARQ_TXLOG_B.dat', 'w')
+
+    # MAC layer's buffer, implemented using linked list
+    # should not use [[]]*NSEQ, Google "append to nested list"
+    self.tx_buffer = map(lambda x: [], range(NSEQ))
+    self.tx_oqueue = [[]]*NSEQ_MAC  # tx's output queue to PHY layer, implemented using list
+    self.rx_buffer = [[]]*NSEQ      # rx's input queue from PHY layer, implemented using list
+    self.rx_oqueue = []             # rx's output queue to APP layer
+
+    self.f = infile
+    self.prt_msgq = prt_msgq
+
+    if self.arq_mode == 1:
+      self.arq = NULL_ARQ(node)
+    elif self.arq_mode == 2:
+      self.arq = N_SW_ARQ(node)
+    elif self.arq_mode == 3:
+      self.arq = N_GBN_ARQ(node,windowsize,dack,self.f)
+    elif self.arq_mode == 4:
+      self.arq = N_SR_ARQ(node,windowsize,self.f,sack_flag=False)
+    elif self.arq_mode == 5:
+      self.arq = N_SR_ARQ(node,windowsize,self.f,sack_flag=True)
+    elif self.arq_mode == 6:
+      self.arq = RTT_ARQ(node)
+
+    global WSIZE
+    WSIZE = windowsize 
+
+    self.index = 0  # current index of the tx buffer
+
+    self.lock = threading.Lock()
+
+    # update tx queue during initialization
+    for i in range(self.npkt):
+      if type(self.c[0]) == str:
+        buff = self.c[self.pktsize*i:self.pktsize*(i+1)]
+      elif type(self.c[0]) == int:
+        buff = map(chr,self.c[self.pktsize*i:self.pktsize*(i+1)])
+
+      if len(buff) != self.pktsize:
+        if type(buff) == list:
+          buff = buff + [chr(self.NULL)] * (self.pktsize-len(buff))
+        if type(buff) == str:
+          buff = buff + struct.pack('!B',self.NULL) * (self.pktsize-len(buff))
+      self.tx_buffer[self.index].append(buff)
+      self.index = (self.index+1)%NSEQ
+
+    self.recstring = ""
+
+  def bufferUpdate(self,content):
+    # to make sure it is an valid update
+    if len(content) == 0:  
+      return
+      
+    self.lock.acquire()
+    while len(content) > 0:
+      buff = content[:self.pktsize]
+      if len(buff) < self.pktsize:
+        if type(buff) == list:
+          buff = buff + [chr(self.NULL)] * (self.pktsize-len(buff))
+        if type(buff) == str:
+          buff = buff + struct.pack('!B',self.NULL) * (self.pktsize-len(buff))
+
+      self.tx_buffer[self.index].append(buff)
+
+      # FIXME: the bufferUpdate function conflicts with the implementation of wrap transmissions
+      # Note that wrap tx is implemented using pop and insert, and the position is related to self.npkt
+      # A better strategy is to realize warp tx in upper layer, and control the speed through TCP
+      self.npkt += 1
+      content = content[self.pktsize:]
+      print "=============== self.npkt =",self.npkt, " ", map(ord,buff[0:10])
+
+    self.lock.release()
+
+    self.index = (self.index+1)%NSEQ
+
+  def deliverRxFrames(self,packet):
+    # deliver rx frames to APP layer
+    self.recstring = self.recstring + packet
+    pass
+
+  def parseSACKfield(self,sack):
+    (l,) = struct.unpack('!B',sack[self.frame.sack_st_pos])
+    r = []
+    for i in range(l):
+      (s,) = struct.unpack('!B',sack[self.frame.sack_st_pos+i+1])
+      r.append(s)
+    return r
+
+  def updateRxQueue(self,rxframe,beacon_seq=0):
+    # rx a frame from PHY, update RxQueue and RxARQ
+    (rec_seq,) = struct.unpack('!B',rxframe[self.FORMAT.RECV_SEQ_POS])
+    rec_packet = rxframe[self.headersize:self.headersize+self.pktsize]
+    (rec_ack,) = struct.unpack('!B',rxframe[self.FORMAT.RECV_ACK_POS])
+
+    if self.arq_mode == 5:  # SR ARQ with selective ACK
+      rec_sack = self.parseSACKfield(rxframe[:self.headersize])
+    else:
+      rec_sack = None
+
+    if self.node == "A" and PRINT_BUFFER_FLAG:
+      print "[RX] Node A RX ", len(rec_packet), string_to_ord_list(rec_packet[:5])
+    elif self.node == "B" and PRINT_BUFFER_FLAG:
+      print "\t\t\t\t\t[RX] Node B RX ", len(rec_packet), string_to_ord_list(rec_packet[:5])
+
+    # for null ARQ
+    if self.arq_mode==1:
+      self.deliverRxFrames(rec_packet)
+      return rec_packet
+
+    seq = self.arq.pre_recv_ack
+
+    # if rx an ack larger than 1 at first, we should also clean the tx buffer
+    if seq is None and rec_ack > 0:
+      seq = 0
+
+    if seq is not None:
+      if self.node == "A" and PRINT_BUFFER_FLAG:
+        print "[RX] Node A SEQ", seq, rec_ack, len(self.tx_buffer[seq])
+      if self.node == "B" and PRINT_BUFFER_FLAG:
+        print "\t\t\t\t\t[RX] Node B SEQ", seq, rec_ack, len(self.tx_buffer[seq])
+
+      # remove the already recived packets
+      self.lock.acquire()
+      while seq != rec_ack:
+        if len(self.tx_buffer[seq]) > 0:
+          #self.tx_buffer[seq].pop(0)
+
+          # implement warp transmission
+          self.tx_buffer[(seq+self.npkt)%NSEQ].append(self.tx_buffer[seq].pop(0))
+          #print "Insert seq", seq, self.npkt, (seq+self.npkt)%NSEQ
+        seq = (seq+1)%NSEQ
+      self.lock.release()
+
+    if self.prt_msgq is not None:
+      ostr = "[RX] UpdateRxQueue: b#=%d rec_seq=%d rec_ack=%d " % (beacon_seq, rec_seq, rec_ack)
+      self.prt_msgq.put(ostr)
+
+    if self.arq_mode == 4 or self.arq_mode == 5:  # SR ARQ
+      r = self.arq.update(rec_seq,rec_ack,rec_sack)
+      if r[0] == 1:  # in-order pkt
+        sseq = r[1]
+        eseq = r[2]
+        self.rx_buffer[sseq] = rec_packet
+        rec_msg = ""
+        x = map(ord,rec_packet)
+        #print "[ARQ_RX] ", sseq, eseq, rec_seq, beacon_seq, x[0], x[5], x[9]
+        while sseq != eseq:
+          rec_msg = rec_msg + self.rx_buffer[sseq]
+          sseq = (sseq+1)%NSEQ
+        #print self.rx_buffer[eseq], eseq
+        rec_msg = rec_msg + self.rx_buffer[eseq]
+        self.deliverRxFrames(rec_msg)          
+        return rec_msg
+      elif r[0] == 2:  # out-of-order pkt
+        self.rx_buffer[rec_seq] = rec_packet
+        return None
+      else:
+        return None
+    else:  # SW/GBN ARQ
+      r = self.arq.update(rec_seq,rec_ack)
+      if r:
+        self.deliverRxFrames(rec_packet)
+        return rec_packet
+      else:
+        return None
+
+  def extractTxFrame(self,beacon_seq=0,burst_seq=None):
+    # extract a frame for transmission, require support from TxARQ, update TxQueue
+    # Input (embed input information to frame)
+    #   @beacon_seq: cur beacon seq num
+    #   @burst_seq:  cur burst seq num
+    if self.arq_mode == 4 or self.arq_mode == 5:
+      self_seq, self_ack, self_sack = self.arq.retrieve()
+    elif self.arq_mode == 6:
+      self_sack = None
+      self_seq, self_ack = self.arq.retrieve(beacon_seq)
+    else:
+      self_sack = None
+      self_seq, self_ack = self.arq.retrieve()
+
+    if self.prt_msgq is not None:    
+      if burst_seq is None:
+        ostr = "[TX] InsertTxQueue: b#=%d self_seq=%d self_ack=%d " % (beacon_seq,self_seq,self_ack)
+      else:
+        ostr = "[TX] InsertTxQueue: beacon#=%d burst#=%d self_seq=%d self_ack=%d " % (beacon_seq,burst_seq,self_seq,self_ack)
+      self.prt_msgq.put(ostr)
+
+    # extract tx_pkt, depending re-tx mode or tx mode
+    tx_frame_list = self.tx_buffer[self_seq]
+    if len(tx_frame_list) == 0:  # if no pkts from APP layer, generate a new pkt
+      tx_pkt = [chr(self.NULL)] * self.pktsize
+    else:                        # if not found in output queue, get it from APP layer
+      tx_pkt = tx_frame_list[0]
+
+    if self.node == "A" and PRINT_BUFFER_FLAG:
+      print "[TX] Node A PRE_RECV_ACK:", self.arq.pre_recv_ack 
+      print "[TX] Node A TX_SEQ:", self_seq, string_to_ord_list(tx_pkt)
+    if self.node == "B" and PRINT_BUFFER_FLAG:
+      print "\t\t\t\t\t[TX] Node B PRE_RECV_ACK:", self.arq.pre_recv_ack 
+      print "\t\t\t\t\t[TX] Node B TX_SEQ:", self_seq, string_to_ord_list(tx_pkt)
+
+    # update self_seq and tx_frame
+    tx_frame_data = self.frame.generate_frame_data(beacon_seq,self_seq,self_ack,tx_pkt,burst_seq,self_sack)
+
+    if fwriter:
+      x = map(ord,tx_pkt[:10])
+      s = "[ARQ_TX] %d %d %d %d %d \n" % (self_seq, burst_seq, x[0], x[5], x[9])
+      fwriter.write(s)
+    
+    if burst_seq is not None:  # for burst mode
+      self.tx_oqueue[burst_seq] = tx_frame_data
+    else:                      # for beacon mode
+      self.tx_oqueue[beacon_seq] = tx_frame_data
+
+    # clean up tx data for NULL_ARQ
+    if self.arq_mode == 1:
+      self.lock.acquire()
+
+      self.tx_buffer[self_seq].pop(0)
+      self.lock.release()
+      
+    return tx_frame_data
+
+  def getTxFrame(self,txseq):
+    # get a transmitted frame on a particular seq
+    assert(txseq < NSEQ_MAC)
+    return self.tx_oqueue[txseq]
+
+  def getRxBufferSize(self):
+    return len(self.recstring)*1.0 / self.pktsize
+
+# ////////////////////////////////////////////////////// #
+#                    ARQ Protocols                       #
+# ////////////////////////////////////////////////////// #
+
+def IsSeqSmaller(a_seq,b_seq):
+  if a_seq == None or b_seq == None:
+    return False
+  if abs(a_seq-b_seq) > WSIZE: # we are on the seq boundary
+    if a_seq > b_seq:  # e.g., a_seq=127 b_seq=1
+      return True
+    else:
+      return False
+  else:
+    return a_seq < b_seq
+
+def GetNextSeqNum(seq,recv_ack):
+  # If recv_ack is larger than seq, use recv_ack
+  # Since we use warp seq, we should compare them carefully
+  # Depend on whether seq/recv_ack is small (less than 8)
+
+  #print seq, recv_ack
+  seqAr = (seq+1)%NSEQ
+  seqAd = (seq+1)/NSEQ
+
+  if recv_ack is None:
+    return seqAr
+
+  if IsSeqSmaller(seqAr,recv_ack):
+    return recv_ack
+  else:
+    return seqAr
+
+  # TODO: remove the following codes
+  # TODO: refractor following programs with IsSeqSmaller function
+  #if recv_ack <= WSIZE:
+  #  if seqAr <= WSIZE:
+  #    return max(seqAr, recv_ack)
+  #  else:  # no matter seqAd==0 or seqAd==1
+  #    return seqAr
+  #elif seqAd == 0 and recv_ack > WSIZE:
+  #  return max(seqAr,recv_ack)
+  #elif seqAd == 1 and recv_ack > WSIZE:
+  #  return seqAr
+
+class RTT_ARQ:
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0  # should transmit first packet
+
+    self.seq = 0 # cur tx seq no
+    self.ack = 0 # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_STATE = ''
+
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+    self.prev_beacon=1
+
+  def retrieve(self,beacon_nu):
+    self.lock.acquire()  
+    r = (self.seq, self.ack)
+    if self.prev_beacon<beacon_nu:
+     print "!!!!!!!!!!!!!!!!!!what happened!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+     self.seq=0
+     self.prev_beacon=self.prev_beacon+1
+     r = (self.seq, self.ack)
+     self.seq=1
+    else:
+     self.seq = (self.seq+1)%NSEQ
+    
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \t\t\t\t\t\t\t\tNode B sending ack: %d\n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    if self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d \t\t\t\t\t\t\t\tNode B receive ack: %d\n" % (rec_seq, rec_ack)
+
+    #isNewPkt = False
+    #if rec_seq == self.ack:           
+    #  self.ack = (rec_seq+1)%NSEQ
+     # isNewPkt = True 
+      
+         
+   # elif rec_seq > self.ack:
+    #  self.ack = (rec_seq+1)%NSEQ 
+      #isNewPkt = True
+    isNewPkt = False
+    self.ack=rec_seq%NSEQ
+      
+    # assumption: you will never receive an old ACK (FIFO Queue)
+   
+
+    self.lock.release()
+    return isNewPkt
+
+class NULL_ARQ:
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0
+    self.seq = 0
+    self.ack = 0
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+    r = (self.seq,self.ack)
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (self.seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \n\t\t\t\t\t\t\t\tNode B sending ack: %d" % (self.seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+
+    self.seq = (self.seq+1)%NSEQ
+    self.lock.release()
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d\n\t\t\t\t\t\t\t\tNode B receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    return True
+
+class N_SW_ARQ:#end node, stop and wait ARQ
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0  # should transmit first packet
+
+    self.seq = 0 # cur tx seq no
+    self.ack = 0 # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_STATE = ''
+
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+    self.seq = self.pre_recv_ack
+    r = (self.seq, self.ack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \n\t\t\t\t\t\t\t\tNode B sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    if self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d \n\t\t\t\t\t\t\t\tNode B receive ack: %d" % (rec_seq, rec_ack)
+
+    isNewPkt = False
+    if rec_seq == self.ack:           # get correct pkt
+      self.ack = (self.ack+1)%NSEQ    # require next pkt
+      isNewPkt = True                 # indication
+
+    # assumption: you will never receive an old ACK (FIFO Queue)
+    self.pre_recv_ack = rec_ack
+
+    self.lock.release()
+    return isNewPkt
+
+class N_GBN_ARQ:
+  """
+    End to End, End node Go back N ARQ
+    * acumulative ack
+    * duplicate ACK
+    * include TX ARQ and RX ARQ
+  """
+  def __init__(self,node,windowsize=8,dack=True,infile=None):
+    self.pre_recv_ack = None  # previous received ack seq
+    self.rx_npkt = 0          # number of packets received so far
+
+    self.windowsize = windowsize
+    self.seq = 0  # cur tx seq no
+    self.ack = 0  # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_DUACK = False
+
+    self.USE_DACK = dack
+    self.f = infile
+
+    self.n = node
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+
+    if self.TX_STATE == '':  # at the beginning
+      self.TX_STATE = 'NEXT'
+    elif self.TX_STATE == 'NEXT':
+      if self.pre_recv_ack == None:
+        self.seq = (self.seq+1)%NSEQ
+        self.TX_STATE = 'NEXT'
+      else:
+        self.seq = GetNextSeqNum(self.seq,self.pre_recv_ack)  
+        if (self.seq-self.pre_recv_ack+NSEQ)%NSEQ == self.windowsize-1:
+          self.TX_STATE = 'WINDOW'
+    elif self.TX_STATE == 'WINDOW': # Go Back to the beginning
+      self.seq = self.pre_recv_ack
+      self.TX_STATE = 'NEXT'
+
+    # the ack seq has already been defined
+    r = (self.seq, self.ack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr1 = "[TX] Node A send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr1)
+    elif self.n=="B":
+      ostr1 = "\t\t\t\t\t\t\t\t[TX] Node B send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr1)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    self.rx_npkt = self.rx_npkt + 1
+    if self.n == "A":
+      ostr1 = "[RX] Node A recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "[RX] Node A self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    if self.n == "B":
+      ostr1 = "\t\t\t\t\t\t\t\t[RX] Node B recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "\t\t\t\t\t\t\t\t[RX] Node B self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    # RX path: check the status of rec_seq
+    isNewPkt = False
+    if rec_seq == self.ack: # get correct pkt
+      self.ack = (self.ack+1)%NSEQ
+      isNewPkt = True
+
+    # TX path: check the status of rec_ack
+    if rec_ack == 0 and self.rx_npkt == 1:
+      # if first time recv an ack and the ack no is zero
+      # it is no sense, and we should ignore it
+      pass
+    else:
+      if IsSeqSmaller(rec_ack,self.pre_recv_ack):
+        print "[N_GBN_ARQ] WARNING: you receive an old ACK | pre_recv_ack=%d rec_ack=%d" % (self.pre_recv_ack, rec_ack)
+        pass
+      elif self.USE_DACK and not self.RX_DUACK and self.pre_recv_ack == rec_ack:
+        self.RX_DUACK = True  # if we are in dup_ack state, ignore other dup acks
+        self.TX_STATE = 'WINDOW'
+      else:
+        self.pre_recv_ack = rec_ack
+        if self.pre_recv_ack != rec_ack:
+          self.RX_DUACK = False
+
+    self.lock.release()
+    return isNewPkt   
+
+  def getNextSeqNum2(self,seq,recv_ack):
+    # TODO: not tested or remove it?
+    if recv_ack == None:
+      return (seq+1)%NSEQ
+
+    predicate_seq = seq+1
+    if predicate_seq == NSEQ:
+      if recv_ack - predicate_seq%NSEQ < self.windowsize:
+        return recv_ack
+      else:
+        return (seq+1)%NSEQ
+    else:
+      if recv_ack > predicate_seq:
+        return recv_ack
+      else:
+        if recv_ack+NSEQ - predicate_seq < self.windowsize:
+          return recv_ack
+        else:
+          return (seq+1)%NSEQ
+
+class N_SR_ARQ:
+  """
+    End to End, End node Selective Repeat ARQ
+    * acumulative ack
+    * include TX ARQ and RX ARQ
+    * [todo] selective ack
+  """
+  def __init__(self,node,windowsize=8,infile=None,sack_flag=True):
+    self.rx_npkt =  0    # number of packets received so far
+    self.pre_recv_ack = None  # previous rx ack seq#
+
+    self.windowsize = windowsize
+    self.seq = 0      # tx branch: cur tx seq#
+    self.ack = 0      # tx branch: cur ack seq#
+
+    self.nakque = []  # tx branch: nak seq# queue
+    self.rxque  = []  # rx branch: rx  seq# queue
+
+    self.TX_STATE = ''
+    self.use_sack = sack_flag
+    self.sack_flag = [0]*NSEQ
+
+    self.f = infile
+    self.n = node
+    self.lock = threading.Lock()
+
+  # Tx branch
+  def retrieve(self):
+    self.lock.acquire()
+
+    if self.TX_STATE == '':  # at the beginning
+      self.seq = 0
+      self.nakque.append(self.seq)
+      self.TX_STATE = 'NEXT'
+    elif self.TX_STATE == 'NEXT' or self.TX_STATE == 'WINDOW_NEXT':
+      # the accu ack may change (due to reception) after we update seq last time
+      self.seq = GetNextSeqNum(self.seq,self.pre_recv_ack)
+      
+      #if self.n == "A":
+      #  ostr = "[TX][NEXT] Node A: %d \n" % (self.seq)
+      #  if self.f is not None:
+      #    self.f.write(ostr)
+      #if self.n == "B":
+      #  ostr = "\t\t\t\t\t\t\t\t[TX][NEXT] Node B: %d \n" % (self.seq)
+      #  if self.f is not None:
+      #    self.f.write(ostr)
+
+      if self.nakque.count(self.seq) == 0:
+        self.nakque.append(self.seq)
+
+      # reset the state (goto beginning) if full
+      if len(self.nakque) == self.windowsize and self.seq == self.nakque[self.windowsize-1]:
+        self.TX_STATE = 'WINDOW'
+    elif self.TX_STATE == 'WINDOW':
+      if self.n == "A" and self.pre_recv_ack is not None:
+        ostr = "[TX][WINDOW] Node A: %d %d \n" % (self.seq, self.pre_recv_ack)
+        if self.f is not None:
+          self.f.write(ostr)
+      if self.n == "B" and self.pre_recv_ack is not None:
+        ostr = "\t\t\t\t\t\t\t\t[TX][WINDOW] Node B: %d %d \n" % (self.seq, self.pre_recv_ack)
+        if self.f is not None:
+          self.f.write(ostr)
+
+      self.seq = self.pre_recv_ack if self.pre_recv_ack is not None else 0
+      self.TX_STATE = 'NEXT'
+
+    # the ack seq has already been updated in update()
+    sack = self.genSACK() if self.use_sack else None
+    r = (self.seq, self.ack, sack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "[TX] Node A send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\t[TX] Node B send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def genSACK(self):
+    # Check self.rxque
+    s = self.ack
+    e = self.rxque[-1] if len(self.rxque)>0 else None
+    r = []
+    if e is not None:
+      s = (s+1)%NSEQ
+      while True:
+        l = (s-1+NSEQ)%NSEQ
+        if self.sack_flag[l] == 0 and self.sack_flag[s] == 1:
+          r.append(s)
+        elif self.sack_flag[l] == 1 and self.sack_flag[s] == 0:
+          r.append(l)
+        
+        if s == e and self.sack_flag[s] == 1:
+          r.append(e)
+
+        s = (s+1)%NSEQ
+        if s == (e+1)%NSEQ:
+          break
+
+    #print "GenSACK: ack=", self.ack, " rxque=", self.rxque, " ret=", r
+    assert(len(r)%2 == 0)
+    from mac_params import MAC_HEADER_LEN, SACK_ST_POS
+    rr = MAC_HEADER_LEN - SACK_ST_POS
+    if len(r) > rr:
+      if rr%2 == 1:
+        rr = rr-1
+      return r[:rr]
+    return r
+
+  def update(self,rec_seq,rec_ack,rec_sack=None):
+    """
+    @ret: [mode,rec_seq,end_seq]
+
+    mode: 0 (duplicate pkt)
+          1 (in-order pkt)
+          2 (out-of-order pkt)
+
+    end_seq: upper layer can deliver [rec_seq:end_seq]
+             only useful when mode == 1
+    """
+    self.lock.acquire()
+    self.rx_npkt = self.rx_npkt + 1
+    if self.n == "A":
+      ostr1 = "[RX] Node A recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "[RX] Node A self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    if self.n == "B":
+      ostr1 = "\t\t\t\t\t\t\t\t[RX] Node B recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "\t\t\t\t\t\t\t\t[RX] Node B self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    ################################################
+    # RX branch: check the status of rec_seq
+    # If in-order, incrase ack seq; else, store it
+    ################################################
+    end_seq = 0
+    if IsSeqSmaller(rec_seq,self.ack):
+      rx_mode = 0
+      pass
+    elif rec_seq == self.ack: # get in-order pkt
+      rx_mode = 1
+
+      # see if we have received advanced pkt
+      seq = (self.ack+1)%NSEQ
+      while self.rxque.count(seq) > 0:
+        self.rxque.remove(seq)
+        if self.use_sack:
+          self.sack_flag[seq] = 0
+        seq = (seq+1)%NSEQ
+      self.ack = seq 
+      end_seq = (seq-1+NSEQ)%NSEQ
+    else:  # get out-of-order pkt, store it
+      c = self.rxque.count(rec_seq)
+      if c > 0:
+        rx_mode = 0  # receive duplicate pkt
+      else:
+        rx_mode = 2
+        self.rxque.append(rec_seq)
+        if self.use_sack:
+          self.sack_flag[rec_seq] = 1
+          #print "OnOutRx", self.sack_flag
+
+    if self.n == "A":
+      ostr =  "[RX] Node A [%d %d %d] self_ack=%d \n" % (rx_mode, rec_seq, end_seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+        #print self.rxque
+    if self.n == "B":
+      ostr = "\t\t\t\t\t\t\t\t[RX] Node B [%d %d %d] self_ack=%d \n" % (rx_mode, rec_seq, end_seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+        #print "\t\t\t\t\t\t\t\t", self.rxque
+
+    ################################################
+    # TX branch: check the status of rec_ack
+    ################################################
+    if rec_ack == 0 and self.rx_npkt == 1:
+      # if first time recv an ack and the ack no is zero
+      # it is no sense, and we should ignore it
+      pass
+    else:
+      if IsSeqSmaller(rec_ack,self.pre_recv_ack):
+        print "[N_SR_ARQ] WARNING: you receive an old ACK | pre_recv_ack=%d rec_ack=%d" % (self.pre_recv_ack, rec_ack)
+        sys.exit()
+      else:
+        fnak_seq = self.nakque[0] if len(self.nakque)>0 else None
+        if IsSeqSmaller(rec_ack,fnak_seq):
+          print "[N_SR_ARQ] WARNING: you receive an unexpected ACK | nak_seq=%d rec_ack=%d" % (fnak_seq, rec_ack)
+          sys.exit()
+        #elif rec_ack == fnak_seq:
+        #  self.nakque.pop(0)
+        else:
+          self.pre_recv_ack = rec_ack
+          # nakque must be not empty
+          # rx an advanced ack, clean up nak queue
+          while IsSeqSmaller(fnak_seq,rec_ack):
+            self.nakque.pop(0)
+            # reset the TX state - allow more transmissions
+            if self.TX_STATE == 'WINDOW':
+              self.TX_STATE = 'NEXT'
+            if len(self.nakque) == 0:
+              break
+            fnak_seq = self.nakque[0]
+            #print "[N_SR_ARQ] nak_seq=%d rec_ack=%d" % (fnak_seq, rec_ack)
+
+    self.lock.release()
+
+    return [rx_mode,rec_seq,end_seq]  
+
+# ////////////////////////////////////////////////////// #
+#                    MAIN FUNCTION                       #
+# ////////////////////////////////////////////////////// #
+import os, glob
+def ReadImages(dirPath):
+  imageData = ""
+  imgfile = []
+  os.chdir(dirPath)
+  types = ('*.jpg','*.bmp')
+  for f in types:
+    imgfile.extend(glob.glob(f))
+  for i in imgfile:
+    print "image file: ",i
+    imgloc = i
+    #open the img
+    img = Image.open(imgloc)
+    mode = img.mode
+    if mode == 'RGB':
+      greyLevel = 3
+    elif mode == 'L':
+      greyLevel = 1
+    img_data = numpy.array(list(img.getdata()), numpy.uint8)
+    img_data.shape = len(img_data)*greyLevel,1
+    #print "img_data_before send 1: ",len(img_data)
+    #img_data consists of 680*976 pixels with RGB 3 values of each pixel, it is like [[r1,g1,b1],[r2,g2,b2].....[r663680],[g663680],[b663680]], list(img.getdata()) returns an operatable list of the img data
+
+    #the following 4 parameters measure the size of the image
+    width,height = img.size
+    width1 = width / 128
+    width2 = width % 128
+    height1 = height / 128
+    height2 = height % 128
+
+    m = [width1,width2,height1,height2,greyLevel]#1 indicates grey-level
+    #print "the picinfo vector is ",m
+    #here length means the number of values, not bytes, img_data is a nested array
+    for i in range(len(img_data)):
+      m.append(img_data[i][0])
+    buff_char = map(chr,m)
+    string = "".join(buff_char)
+    imageData = imageData+string
+
+  return imageData
+
+def ReadImage(imagePath):
+  imgloc = imagePath
+  #open the img
+  img = Image.open(imgloc)
+  mode = img.mode
+  if mode == 'RGB':
+    greyLevel = 3
+  elif mode == 'L':
+    greyLevel = 1
+  img_data = numpy.array(list(img.getdata()), numpy.uint8)
+  img_data.shape = len(img_data)*greyLevel,1
+
+  width,height = img.size
+  width1 = width / 128
+  width2 = width % 128
+  height1 = height / 128
+  height2 = height % 128
+
+  m = [width1,width2,height1,height2,greyLevel]#1 indicates grey-level
+
+  for i in range(len(img_data)):
+    m.append(img_data[i][0])
+  return m
+
+def string_to_ord_list(s):
+  return map(lambda x: ord(x), s)
+
+if __name__ == '__main__':
+  from optparse import OptionParser
+  parser = OptionParser()
+  parser.add_option("", "--play", type="int", default=1, help="Mode: txt or GUI")
+  parser.add_option("-m", "--arq-mode", type="int", default=4, help="ARQ mode")
+  parser.add_option("-t", "--times", type="int", default=100, help="time slots")
+  parser.add_option("-w", "--windowsize", type="int", default=8, help="window size")  
+  parser.add_option("-d", "--downlink", type="float", default=1, help="downlink PRR")
+  parser.add_option("-u", "--uplink", type="float", default=1, help="uplink PRR")
+  (options, args) = parser.parse_args()
+
+  play = options.play
+  assert(play == 1 or play == 2)
+
+  mode = options.arq_mode
+  run_times = options.times
+  uplink = options.uplink
+  downlink = options.downlink
+  windowsize = options.windowsize
+
+  framesize = 1535 #757 #404  #74
+  pktsize = framesize - 20 - 4
+
+  SEQ_NUM = 256
+
+  if play == 1:
+    data_raw1 = []
+    data_raw2 = []
+    for i in range(run_times):
+      x = [i] * pktsize
+      for j in range(pktsize):
+        data_raw1.append((i+j)%SEQ_NUM)
+        data_raw2.append((i+2*j)%SEQ_NUM)
+  elif play == 2:
+    data_raw1 = ReadImage('img_data/INC.bmp') #_logo_m.jpg')
+    data_raw2 = ReadImage('img_data/CUHK.bmp')#logo_m.bmp')
+
+  seed_num = random.randint(0, sys.maxint) # 9000541137569755104
+  print "LEN: ", seed_num, len(data_raw1), len(data_raw2)
+  max_pic_len = max(len(data_raw1), len(data_raw2))
+
+  import os, sys
+  f = None
+  #f = sys.stdout
+  #f = open('SR_ARQ.dat','w')
+  node11 = BufferController(data_raw1,'A',framesize,windowsize,mode,True,f)
+  node21 = BufferController(data_raw2,'B',framesize,windowsize,mode,True,f)
+
+  random.seed(seed_num)
+  for i in range(run_times):
+
+    if play == 2 and len(node11.recstring) >= max_pic_len \
+                 and len(node21.recstring) >= max_pic_len:
+      pass #break
+
+    beacon_seq = i%NSEQ
+    f11 = node11.extractTxFrame(1,beacon_seq)
+    f21 = node21.extractTxFrame(1,beacon_seq)
+
+    print i, ": ", string_to_hex_list(f11[:30]), string_to_hex_list(f11[-4:])
+    print i, ": ", string_to_hex_list(f21[:30]), string_to_hex_list(f21[-4:])
+
+    if PRINT_BUFFER_FLAG:
+      print "INFO: ", i, len(node11.recstring), len(node21.recstring), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+
+    if random.randint(1,100) <= uplink*100:
+      fxor = ''
+      for xx in range(len(f11)):
+        fxor += chr(ord(f11[xx])^ord(f21[xx]))
+      print i, ": ", len(fxor),string_to_hex_list(fxor[0:130]), string_to_hex_list(fxor[-14:])
+
+      from gnuradio import digital
+      x = digital.crc.gen_and_append_crc32(fxor[:-4])
+      print "STRING HEX LIST", len(x), string_to_hex_list(x[-4:])
+
+      rx_pkt = mac_frame_handler.HandleXorFrame(fxor,512)
+      print i, ": ", string_to_hex_list(rx_pkt[-14:])
+      from gnuradio import digital
+      (ok, payload) = digital.crc.check_crc32(rx_pkt)
+      print ok
+
+      if random.randint(1,100) <= downlink*100:
+        # for node A
+        #self_seq, = struct.unpack('!B',fxor[7])
+        #self_pkt = node11.getTxFrame(self_seq)
+        self_pkt = node11.getTxFrame(beacon_seq)
+        rxframe = ''
+        for xx in range(len(fxor)):
+          rxframe += chr(ord(fxor[xx])^ord(self_pkt[xx]))
+        #print "Node A: ", (rxframe == f21)
+        #print "f21: ", len(f21), string_to_ord_list(f21)
+
+        rxpkt = node11.updateRxQueue(rxframe)
+        #print string_to_ord_list(rxpkt)        
+
+        if play == 1 or play == 2:
+          rs = node11.recstring
+          clen = min(len(rs),len(data_raw2))
+          rs = rs[:clen]
+          d = data_raw2[:clen]
+
+          flag = (string_to_ord_list(rs[-pktsize:]) == d[-pktsize:])
+          if not flag and mode != 1:
+            print "===================================================================="
+            print "ERROR", i, len(rs), len(data_raw2), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+            print "Node B R:", string_to_ord_list(rs[-(2*pktsize):])
+            print "Node B T:", d[-(2*pktsize):]
+            break
+
+      if random.randint(1,100) <= downlink*100:  
+        # for node B
+        #self_seq, = struct.unpack('!B',fxor[9])
+        #self_pkt = node21.getTxFrame(self_seq)
+        self_pkt = node21.getTxFrame(beacon_seq)
+        rxframe = ''
+        for xx in range(len(fxor)):
+          rxframe += chr(ord(fxor[xx])^ord(self_pkt[xx]))
+        #print "Node B: ", (rxframe == f11)
+
+        rxpkt = node21.updateRxQueue(rxframe)
+        if play == 1 or play == 2:
+          rs = node21.recstring
+          clen = min(len(rs),len(data_raw1))
+          rs = rs[:clen]
+          d = data_raw1[:clen]
+
+          flag = (string_to_ord_list(rs[-pktsize:]) == d[-pktsize:])
+          if not flag and mode != 1:
+            print "===================================================================="
+            print "ERROR", i, len(rs), len(data_raw1), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+            print "Node A R:", string_to_ord_list(rs[-(2*pktsize):])
+            print "Node A T:", d[-(2*pktsize):]
+            break
+
+  if f is not None and f is not sys.stdout:
+    f.close()
+
+  print len(node11.recstring)/pktsize, len(node21.recstring)/pktsize
+#!/usr/bin/env python
+#
+# Copyright 2013 Yue Li
+# Copyright 2014 Lizhao You
+#
+import math,random,time,struct
+import socket,sys,threading
+import Image, numpy, argparse
+import collections
+
+import mac_frame_handler
+from mac_params import string_to_hex_list
+from mac_params import ENDNODE_FRAME_FORMAT, MAC_HEADER_LEN, CRC_LEN
+from mac_params import TOTAL_ARQ_NSEQ as NSEQ
+from mac_params import TOTAL_MAC_NSEQ as NSEQ_MAC
+
+global WSIZE
+WSIZE = 0
+
+global fwriter
+fwriter = None
+
+# /////////////////////////////////////////////////////////////////////////////
+#                            Buffer Controller for MAC
+# /////////////////////////////////////////////////////////////////////////////
+# 1) Manage tx buffer from APP and to PHY;
+# 2) Manage rx buffer from PHY and to APP;
+# 3) Choose ARQ mode: NULL, E2E-SW, E2E-GBN, E2E-SR;
+
+PRINT_BUFFER_FLAG = 0
+
+class BufferController:
+  def __init__(self,content,node,framebytes,windowsize=8,mode=1,dack=False,infile=None,prt_msgq=None):
+    self.c = content
+    if type(self.c) == 'str':
+      self.c = map(ord,self.c)
+    self.frame = mac_frame_handler.EndnodeFrame(framebytes,node)
+    self.FORMAT = self.frame.f
+    self.pktsize = self.frame.pktsize
+    self.headersize = self.frame.headersize
+    self.npkt = float(len(self.c))/self.pktsize
+    self.npkt = int(math.ceil(self.npkt))
+
+    self.node = node
+    self.arq_mode = mode
+    self.NULL = 129
+
+    global fwriter
+    #if self.node == 'A':
+    #  fwriter=open('ARQ_TXLOG_A.dat', 'w')
+    #if self.node == 'B':
+    #  fwriter=open('ARQ_TXLOG_B.dat', 'w')
+
+    # MAC layer's buffer, implemented using linked list
+    # should not use [[]]*NSEQ, Google "append to nested list"
+    self.tx_buffer = map(lambda x: [], range(NSEQ))
+    self.tx_oqueue = [[]]*NSEQ_MAC  # tx's output queue to PHY layer, implemented using list
+    self.rx_buffer = [[]]*NSEQ      # rx's input queue from PHY layer, implemented using list
+    self.rx_oqueue = []             # rx's output queue to APP layer
+
+    self.f = infile
+    self.prt_msgq = prt_msgq
+
+    if self.arq_mode == 1:
+      self.arq = NULL_ARQ(node)
+    elif self.arq_mode == 2:
+      self.arq = N_SW_ARQ(node)
+    elif self.arq_mode == 3:
+      self.arq = N_GBN_ARQ(node,windowsize,dack,self.f)
+    elif self.arq_mode == 4:
+      self.arq = N_SR_ARQ(node,windowsize,self.f,sack_flag=False)
+    elif self.arq_mode == 5:
+      self.arq = N_SR_ARQ(node,windowsize,self.f,sack_flag=True)
+    elif self.arq_mode == 6:
+      self.arq = RTT_ARQ(node)
+
+    global WSIZE
+    WSIZE = windowsize 
+
+    self.index = 0  # current index of the tx buffer
+
+    self.lock = threading.Lock()
+
+    # update tx queue during initialization
+    for i in range(self.npkt):
+      if type(self.c[0]) == str:
+        buff = self.c[self.pktsize*i:self.pktsize*(i+1)]
+      elif type(self.c[0]) == int:
+        buff = map(chr,self.c[self.pktsize*i:self.pktsize*(i+1)])
+
+      if len(buff) != self.pktsize:
+        if type(buff) == list:
+          buff = buff + [chr(self.NULL)] * (self.pktsize-len(buff))
+        if type(buff) == str:
+          buff = buff + struct.pack('!B',self.NULL) * (self.pktsize-len(buff))
+      self.tx_buffer[self.index].append(buff)
+      self.index = (self.index+1)%NSEQ
+
+    self.recstring = ""
+
+  def bufferUpdate(self,content):
+    # to make sure it is an valid update
+    if len(content) == 0:  
+      return
+      
+    self.lock.acquire()
+    while len(content) > 0:
+      buff = content[:self.pktsize]
+      if len(buff) < self.pktsize:
+        if type(buff) == list:
+          buff = buff + [chr(self.NULL)] * (self.pktsize-len(buff))
+        if type(buff) == str:
+          buff = buff + struct.pack('!B',self.NULL) * (self.pktsize-len(buff))
+
+      self.tx_buffer[self.index].append(buff)
+
+      # FIXME: the bufferUpdate function conflicts with the implementation of wrap transmissions
+      # Note that wrap tx is implemented using pop and insert, and the position is related to self.npkt
+      # A better strategy is to realize warp tx in upper layer, and control the speed through TCP
+      self.npkt += 1
+      content = content[self.pktsize:]
+      print "=============== self.npkt =",self.npkt, " ", map(ord,buff[0:10])
+
+    self.lock.release()
+
+    self.index = (self.index+1)%NSEQ
+
+  def deliverRxFrames(self,packet):
+    # deliver rx frames to APP layer
+    self.recstring = self.recstring + packet
+    pass
+
+  def parseSACKfield(self,sack):
+    (l,) = struct.unpack('!B',sack[self.frame.sack_st_pos])
+    r = []
+    for i in range(l):
+      (s,) = struct.unpack('!B',sack[self.frame.sack_st_pos+i+1])
+      r.append(s)
+    return r
+
+  def updateRxQueue(self,rxframe,beacon_seq=0):
+    # rx a frame from PHY, update RxQueue and RxARQ
+    (rec_seq,) = struct.unpack('!B',rxframe[self.FORMAT.RECV_SEQ_POS])
+    rec_packet = rxframe[self.headersize:self.headersize+self.pktsize]
+    (rec_ack,) = struct.unpack('!B',rxframe[self.FORMAT.RECV_ACK_POS])
+
+    if self.arq_mode == 5:  # SR ARQ with selective ACK
+      rec_sack = self.parseSACKfield(rxframe[:self.headersize])
+    else:
+      rec_sack = None
+
+    if self.node == "A" and PRINT_BUFFER_FLAG:
+      print "[RX] Node A RX ", len(rec_packet), string_to_ord_list(rec_packet[:5])
+    elif self.node == "B" and PRINT_BUFFER_FLAG:
+      print "\t\t\t\t\t[RX] Node B RX ", len(rec_packet), string_to_ord_list(rec_packet[:5])
+
+    # for null ARQ
+    if self.arq_mode==1:
+      self.deliverRxFrames(rec_packet)
+      return rec_packet
+
+    seq = self.arq.pre_recv_ack
+
+    # if rx an ack larger than 1 at first, we should also clean the tx buffer
+    if seq is None and rec_ack > 0:
+      seq = 0
+
+    if seq is not None:
+      if self.node == "A" and PRINT_BUFFER_FLAG:
+        print "[RX] Node A SEQ", seq, rec_ack, len(self.tx_buffer[seq])
+      if self.node == "B" and PRINT_BUFFER_FLAG:
+        print "\t\t\t\t\t[RX] Node B SEQ", seq, rec_ack, len(self.tx_buffer[seq])
+
+      # remove the already recived packets
+      self.lock.acquire()
+      while seq != rec_ack:
+        if len(self.tx_buffer[seq]) > 0:
+          #self.tx_buffer[seq].pop(0)
+
+          # implement warp transmission
+          self.tx_buffer[(seq+self.npkt)%NSEQ].append(self.tx_buffer[seq].pop(0))
+          #print "Insert seq", seq, self.npkt, (seq+self.npkt)%NSEQ
+        seq = (seq+1)%NSEQ
+      self.lock.release()
+
+    if self.prt_msgq is not None:
+      ostr = "[RX] UpdateRxQueue: b#=%d rec_seq=%d rec_ack=%d " % (beacon_seq, rec_seq, rec_ack)
+      self.prt_msgq.put(ostr)
+
+    if self.arq_mode == 4 or self.arq_mode == 5:  # SR ARQ
+      r = self.arq.update(rec_seq,rec_ack,rec_sack)
+      if r[0] == 1:  # in-order pkt
+        sseq = r[1]
+        eseq = r[2]
+        self.rx_buffer[sseq] = rec_packet
+        rec_msg = ""
+        x = map(ord,rec_packet)
+        #print "[ARQ_RX] ", sseq, eseq, rec_seq, beacon_seq, x[0], x[5], x[9]
+        while sseq != eseq:
+          rec_msg = rec_msg + self.rx_buffer[sseq]
+          sseq = (sseq+1)%NSEQ
+        #print self.rx_buffer[eseq], eseq
+        rec_msg = rec_msg + self.rx_buffer[eseq]
+        self.deliverRxFrames(rec_msg)          
+        return rec_msg
+      elif r[0] == 2:  # out-of-order pkt
+        self.rx_buffer[rec_seq] = rec_packet
+        return None
+      else:
+        return None
+    else:  # SW/GBN ARQ
+      r = self.arq.update(rec_seq,rec_ack)
+      if r:
+        self.deliverRxFrames(rec_packet)
+        return rec_packet
+      else:
+        return None
+
+  def extractTxFrame(self,beacon_seq=0,burst_seq=None):
+    # extract a frame for transmission, require support from TxARQ, update TxQueue
+    # Input (embed input information to frame)
+    #   @beacon_seq: cur beacon seq num
+    #   @burst_seq:  cur burst seq num
+    if self.arq_mode == 4 or self.arq_mode == 5:
+      self_seq, self_ack, self_sack = self.arq.retrieve()
+    elif self.arq_mode == 6:
+      self_sack = None
+      self_seq, self_ack = self.arq.retrieve(beacon_seq)
+    else:
+      self_sack = None
+      self_seq, self_ack = self.arq.retrieve()
+
+    if self.prt_msgq is not None:    
+      if burst_seq is None:
+        ostr = "[TX] InsertTxQueue: b#=%d self_seq=%d self_ack=%d " % (beacon_seq,self_seq,self_ack)
+      else:
+        ostr = "[TX] InsertTxQueue: beacon#=%d burst#=%d self_seq=%d self_ack=%d " % (beacon_seq,burst_seq,self_seq,self_ack)
+      self.prt_msgq.put(ostr)
+
+    # extract tx_pkt, depending re-tx mode or tx mode
+    tx_frame_list = self.tx_buffer[self_seq]
+    if len(tx_frame_list) == 0:  # if no pkts from APP layer, generate a new pkt
+      tx_pkt = [chr(self.NULL)] * self.pktsize
+    else:                        # if not found in output queue, get it from APP layer
+      tx_pkt = tx_frame_list[0]
+
+    if self.node == "A" and PRINT_BUFFER_FLAG:
+      print "[TX] Node A PRE_RECV_ACK:", self.arq.pre_recv_ack 
+      print "[TX] Node A TX_SEQ:", self_seq, string_to_ord_list(tx_pkt)
+    if self.node == "B" and PRINT_BUFFER_FLAG:
+      print "\t\t\t\t\t[TX] Node B PRE_RECV_ACK:", self.arq.pre_recv_ack 
+      print "\t\t\t\t\t[TX] Node B TX_SEQ:", self_seq, string_to_ord_list(tx_pkt)
+
+    # update self_seq and tx_frame
+    tx_frame_data = self.frame.generate_frame_data(beacon_seq,self_seq,self_ack,tx_pkt,burst_seq,self_sack)
+
+    if fwriter:
+      x = map(ord,tx_pkt[:10])
+      s = "[ARQ_TX] %d %d %d %d %d \n" % (self_seq, burst_seq, x[0], x[5], x[9])
+      fwriter.write(s)
+    
+    if burst_seq is not None:  # for burst mode
+      self.tx_oqueue[burst_seq] = tx_frame_data
+    else:                      # for beacon mode
+      self.tx_oqueue[beacon_seq] = tx_frame_data
+
+    # clean up tx data for NULL_ARQ
+    if self.arq_mode == 1:
+      self.lock.acquire()
+
+      self.tx_buffer[self_seq].pop(0)
+      self.lock.release()
+      
+    return tx_frame_data
+
+  def getTxFrame(self,txseq):
+    # get a transmitted frame on a particular seq
+    assert(txseq < NSEQ_MAC)
+    return self.tx_oqueue[txseq]
+
+  def getRxBufferSize(self):
+    return len(self.recstring)*1.0 / self.pktsize
+
+# ////////////////////////////////////////////////////// #
+#                    ARQ Protocols                       #
+# ////////////////////////////////////////////////////// #
+
+def IsSeqSmaller(a_seq,b_seq):
+  if a_seq == None or b_seq == None:
+    return False
+  if abs(a_seq-b_seq) > WSIZE: # we are on the seq boundary
+    if a_seq > b_seq:  # e.g., a_seq=127 b_seq=1
+      return True
+    else:
+      return False
+  else:
+    return a_seq < b_seq
+
+def GetNextSeqNum(seq,recv_ack):
+  # If recv_ack is larger than seq, use recv_ack
+  # Since we use warp seq, we should compare them carefully
+  # Depend on whether seq/recv_ack is small (less than 8)
+
+  #print seq, recv_ack
+  seqAr = (seq+1)%NSEQ
+  seqAd = (seq+1)/NSEQ
+
+  if recv_ack is None:
+    return seqAr
+
+  if IsSeqSmaller(seqAr,recv_ack):
+    return recv_ack
+  else:
+    return seqAr
+
+  # TODO: remove the following codes
+  # TODO: refractor following programs with IsSeqSmaller function
+  #if recv_ack <= WSIZE:
+  #  if seqAr <= WSIZE:
+  #    return max(seqAr, recv_ack)
+  #  else:  # no matter seqAd==0 or seqAd==1
+  #    return seqAr
+  #elif seqAd == 0 and recv_ack > WSIZE:
+  #  return max(seqAr,recv_ack)
+  #elif seqAd == 1 and recv_ack > WSIZE:
+  #  return seqAr
+
+class RTT_ARQ:
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0  # should transmit first packet
+
+    self.seq = 0 # cur tx seq no
+    self.ack = 0 # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_STATE = ''
+
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+    self.prev_beacon=1
+
+  def retrieve(self,beacon_nu):
+    self.lock.acquire()  
+    r = (self.seq, self.ack)
+    if self.prev_beacon<beacon_nu:
+     print "!!!!!!!!!!!!!!!!!!what happened!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+     self.seq=0
+     self.prev_beacon=self.prev_beacon+1
+     r = (self.seq, self.ack)
+     self.seq=1
+    else:
+     self.seq = (self.seq+1)%NSEQ
+    
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \t\t\t\t\t\t\t\tNode B sending ack: %d\n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    if self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d \t\t\t\t\t\t\t\tNode B receive ack: %d\n" % (rec_seq, rec_ack)
+
+    #isNewPkt = False
+    #if rec_seq == self.ack:           
+    #  self.ack = (rec_seq+1)%NSEQ
+     # isNewPkt = True 
+      
+         
+   # elif rec_seq > self.ack:
+    #  self.ack = (rec_seq+1)%NSEQ 
+      #isNewPkt = True
+    isNewPkt = False
+    self.ack=rec_seq%NSEQ
+      
+    # assumption: you will never receive an old ACK (FIFO Queue)
+   
+
+    self.lock.release()
+    return isNewPkt
+
+class NULL_ARQ:
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0
+    self.seq = 0
+    self.ack = 0
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+    r = (self.seq,self.ack)
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (self.seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \n\t\t\t\t\t\t\t\tNode B sending ack: %d" % (self.seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+
+    self.seq = (self.seq+1)%NSEQ
+    self.lock.release()
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d\n\t\t\t\t\t\t\t\tNode B receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    return True
+
+class N_SW_ARQ:#end node, stop and wait ARQ
+  def __init__(self,node,infile=None):
+    self.pre_recv_ack = 0  # should transmit first packet
+
+    self.seq = 0 # cur tx seq no
+    self.ack = 0 # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_STATE = ''
+
+    self.n = node
+    self.f = infile
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+    self.seq = self.pre_recv_ack
+    r = (self.seq, self.ack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "Node A sending pkt: %d \nNode A sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B sending pkt: %d \n\t\t\t\t\t\t\t\tNode B sending ack: %d" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    if self.n=="A":
+      ostr = "Node A receive pkt: %d \nNode A receive ack: %d" % (rec_seq, rec_ack)
+      if self.f is not None:
+        self.f.write(ostr)
+    if self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\tNode B receive pkt: %d \n\t\t\t\t\t\t\t\tNode B receive ack: %d" % (rec_seq, rec_ack)
+
+    isNewPkt = False
+    if rec_seq == self.ack:           # get correct pkt
+      self.ack = (self.ack+1)%NSEQ    # require next pkt
+      isNewPkt = True                 # indication
+
+    # assumption: you will never receive an old ACK (FIFO Queue)
+    self.pre_recv_ack = rec_ack
+
+    self.lock.release()
+    return isNewPkt
+
+class N_GBN_ARQ:
+  """
+    End to End, End node Go back N ARQ
+    * acumulative ack
+    * duplicate ACK
+    * include TX ARQ and RX ARQ
+  """
+  def __init__(self,node,windowsize=8,dack=True,infile=None):
+    self.pre_recv_ack = None  # previous received ack seq
+    self.rx_npkt = 0          # number of packets received so far
+
+    self.windowsize = windowsize
+    self.seq = 0  # cur tx seq no
+    self.ack = 0  # cur tx ack no
+
+    self.TX_STATE = ''
+    self.RX_DUACK = False
+
+    self.USE_DACK = dack
+    self.f = infile
+
+    self.n = node
+    self.lock = threading.Lock()
+
+  def retrieve(self):
+    self.lock.acquire()
+
+    if self.TX_STATE == '':  # at the beginning
+      self.TX_STATE = 'NEXT'
+    elif self.TX_STATE == 'NEXT':
+      if self.pre_recv_ack == None:
+        self.seq = (self.seq+1)%NSEQ
+        self.TX_STATE = 'NEXT'
+      else:
+        self.seq = GetNextSeqNum(self.seq,self.pre_recv_ack)  
+        if (self.seq-self.pre_recv_ack+NSEQ)%NSEQ == self.windowsize-1:
+          self.TX_STATE = 'WINDOW'
+    elif self.TX_STATE == 'WINDOW': # Go Back to the beginning
+      self.seq = self.pre_recv_ack
+      self.TX_STATE = 'NEXT'
+
+    # the ack seq has already been defined
+    r = (self.seq, self.ack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr1 = "[TX] Node A send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr1)
+    elif self.n=="B":
+      ostr1 = "\t\t\t\t\t\t\t\t[TX] Node B send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr1)
+
+    return r
+
+  def update(self,rec_seq,rec_ack):
+    self.lock.acquire()
+    self.rx_npkt = self.rx_npkt + 1
+    if self.n == "A":
+      ostr1 = "[RX] Node A recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "[RX] Node A self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    if self.n == "B":
+      ostr1 = "\t\t\t\t\t\t\t\t[RX] Node B recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "\t\t\t\t\t\t\t\t[RX] Node B self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    # RX path: check the status of rec_seq
+    isNewPkt = False
+    if rec_seq == self.ack: # get correct pkt
+      self.ack = (self.ack+1)%NSEQ
+      isNewPkt = True
+
+    # TX path: check the status of rec_ack
+    if rec_ack == 0 and self.rx_npkt == 1:
+      # if first time recv an ack and the ack no is zero
+      # it is no sense, and we should ignore it
+      pass
+    else:
+      if IsSeqSmaller(rec_ack,self.pre_recv_ack):
+        print "[N_GBN_ARQ] WARNING: you receive an old ACK | pre_recv_ack=%d rec_ack=%d" % (self.pre_recv_ack, rec_ack)
+        pass
+      elif self.USE_DACK and not self.RX_DUACK and self.pre_recv_ack == rec_ack:
+        self.RX_DUACK = True  # if we are in dup_ack state, ignore other dup acks
+        self.TX_STATE = 'WINDOW'
+      else:
+        self.pre_recv_ack = rec_ack
+        if self.pre_recv_ack != rec_ack:
+          self.RX_DUACK = False
+
+    self.lock.release()
+    return isNewPkt   
+
+  def getNextSeqNum2(self,seq,recv_ack):
+    # TODO: not tested or remove it?
+    if recv_ack == None:
+      return (seq+1)%NSEQ
+
+    predicate_seq = seq+1
+    if predicate_seq == NSEQ:
+      if recv_ack - predicate_seq%NSEQ < self.windowsize:
+        return recv_ack
+      else:
+        return (seq+1)%NSEQ
+    else:
+      if recv_ack > predicate_seq:
+        return recv_ack
+      else:
+        if recv_ack+NSEQ - predicate_seq < self.windowsize:
+          return recv_ack
+        else:
+          return (seq+1)%NSEQ
+
+class N_SR_ARQ:
+  """
+    End to End, End node Selective Repeat ARQ
+    * acumulative ack
+    * include TX ARQ and RX ARQ
+    * [todo] selective ack
+  """
+  def __init__(self,node,windowsize=8,infile=None,sack_flag=True):
+    self.rx_npkt =  0    # number of packets received so far
+    self.pre_recv_ack = None  # previous rx ack seq#
+
+    self.windowsize = windowsize
+    self.seq = 0      # tx branch: cur tx seq#
+    self.ack = 0      # tx branch: cur ack seq#
+
+    self.nakque = []  # tx branch: nak seq# queue
+    self.rxque  = []  # rx branch: rx  seq# queue
+
+    self.TX_STATE = ''
+    self.use_sack = sack_flag
+    self.sack_flag = [0]*NSEQ
+
+    self.f = infile
+    self.n = node
+    self.lock = threading.Lock()
+
+  # Tx branch
+  def retrieve(self):
+    self.lock.acquire()
+
+    if self.TX_STATE == '':  # at the beginning
+      self.seq = 0
+      self.nakque.append(self.seq)
+      self.TX_STATE = 'NEXT'
+    elif self.TX_STATE == 'NEXT' or self.TX_STATE == 'WINDOW_NEXT':
+      # the accu ack may change (due to reception) after we update seq last time
+      self.seq = GetNextSeqNum(self.seq,self.pre_recv_ack)
+      
+      #if self.n == "A":
+      #  ostr = "[TX][NEXT] Node A: %d \n" % (self.seq)
+      #  if self.f is not None:
+      #    self.f.write(ostr)
+      #if self.n == "B":
+      #  ostr = "\t\t\t\t\t\t\t\t[TX][NEXT] Node B: %d \n" % (self.seq)
+      #  if self.f is not None:
+      #    self.f.write(ostr)
+
+      if self.nakque.count(self.seq) == 0:
+        self.nakque.append(self.seq)
+
+      # reset the state (goto beginning) if full
+      if len(self.nakque) == self.windowsize and self.seq == self.nakque[self.windowsize-1]:
+        self.TX_STATE = 'WINDOW'
+    elif self.TX_STATE == 'WINDOW':
+      if self.n == "A" and self.pre_recv_ack is not None:
+        ostr = "[TX][WINDOW] Node A: %d %d \n" % (self.seq, self.pre_recv_ack)
+        if self.f is not None:
+          self.f.write(ostr)
+      if self.n == "B" and self.pre_recv_ack is not None:
+        ostr = "\t\t\t\t\t\t\t\t[TX][WINDOW] Node B: %d %d \n" % (self.seq, self.pre_recv_ack)
+        if self.f is not None:
+          self.f.write(ostr)
+
+      self.seq = self.pre_recv_ack if self.pre_recv_ack is not None else 0
+      self.TX_STATE = 'NEXT'
+
+    # the ack seq has already been updated in update()
+    sack = self.genSACK() if self.use_sack else None
+    r = (self.seq, self.ack, sack)
+    self.lock.release()
+
+    if self.n=="A":
+      ostr = "[TX] Node A send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+    elif self.n=="B":
+      ostr = "\t\t\t\t\t\t\t\t[TX] Node B send_seq: %3d   send_ack: %3d \n" % (r[0], r[1])
+      if self.f is not None:
+        self.f.write(ostr)
+
+    return r
+
+  def genSACK(self):
+    # Check self.rxque
+    s = self.ack
+    e = self.rxque[-1] if len(self.rxque)>0 else None
+    r = []
+    if e is not None:
+      s = (s+1)%NSEQ
+      while True:
+        l = (s-1+NSEQ)%NSEQ
+        if self.sack_flag[l] == 0 and self.sack_flag[s] == 1:
+          r.append(s)
+        elif self.sack_flag[l] == 1 and self.sack_flag[s] == 0:
+          r.append(l)
+        
+        if s == e and self.sack_flag[s] == 1:
+          r.append(e)
+
+        s = (s+1)%NSEQ
+        if s == (e+1)%NSEQ:
+          break
+
+    #print "GenSACK: ack=", self.ack, " rxque=", self.rxque, " ret=", r
+    assert(len(r)%2 == 0)
+    from mac_params import MAC_HEADER_LEN, SACK_ST_POS
+    rr = MAC_HEADER_LEN - SACK_ST_POS
+    if len(r) > rr:
+      if rr%2 == 1:
+        rr = rr-1
+      return r[:rr]
+    return r
+
+  def update(self,rec_seq,rec_ack,rec_sack=None):
+    """
+    @ret: [mode,rec_seq,end_seq]
+
+    mode: 0 (duplicate pkt)
+          1 (in-order pkt)
+          2 (out-of-order pkt)
+
+    end_seq: upper layer can deliver [rec_seq:end_seq]
+             only useful when mode == 1
+    """
+    self.lock.acquire()
+    self.rx_npkt = self.rx_npkt + 1
+    if self.n == "A":
+      ostr1 = "[RX] Node A recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "[RX] Node A self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    if self.n == "B":
+      ostr1 = "\t\t\t\t\t\t\t\t[RX] Node B recv_seq: %3d   recv_ack: %3d\n" % (rec_seq, rec_ack)
+      ostr2 = "\t\t\t\t\t\t\t\t[RX] Node B self_ack: %3d   self_seq: %3d\n" % (self.ack, self.seq)
+      if self.f is not None:
+        self.f.write(ostr1)
+        self.f.write(ostr2)
+
+    ################################################
+    # RX branch: check the status of rec_seq
+    # If in-order, incrase ack seq; else, store it
+    ################################################
+    end_seq = 0
+    if IsSeqSmaller(rec_seq,self.ack):
+      rx_mode = 0
+      pass
+    elif rec_seq == self.ack: # get in-order pkt
+      rx_mode = 1
+
+      # see if we have received advanced pkt
+      seq = (self.ack+1)%NSEQ
+      while self.rxque.count(seq) > 0:
+        self.rxque.remove(seq)
+        if self.use_sack:
+          self.sack_flag[seq] = 0
+        seq = (seq+1)%NSEQ
+      self.ack = seq 
+      end_seq = (seq-1+NSEQ)%NSEQ
+    else:  # get out-of-order pkt, store it
+      c = self.rxque.count(rec_seq)
+      if c > 0:
+        rx_mode = 0  # receive duplicate pkt
+      else:
+        rx_mode = 2
+        self.rxque.append(rec_seq)
+        if self.use_sack:
+          self.sack_flag[rec_seq] = 1
+          #print "OnOutRx", self.sack_flag
+
+    if self.n == "A":
+      ostr =  "[RX] Node A [%d %d %d] self_ack=%d \n" % (rx_mode, rec_seq, end_seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+        #print self.rxque
+    if self.n == "B":
+      ostr = "\t\t\t\t\t\t\t\t[RX] Node B [%d %d %d] self_ack=%d \n" % (rx_mode, rec_seq, end_seq, self.ack)
+      if self.f is not None:
+        self.f.write(ostr)
+        #print "\t\t\t\t\t\t\t\t", self.rxque
+
+    ################################################
+    # TX branch: check the status of rec_ack
+    ################################################
+    if rec_ack == 0 and self.rx_npkt == 1:
+      # if first time recv an ack and the ack no is zero
+      # it is no sense, and we should ignore it
+      pass
+    else:
+      if IsSeqSmaller(rec_ack,self.pre_recv_ack):
+        print "[N_SR_ARQ] WARNING: you receive an old ACK | pre_recv_ack=%d rec_ack=%d" % (self.pre_recv_ack, rec_ack)
+        sys.exit()
+      else:
+        fnak_seq = self.nakque[0] if len(self.nakque)>0 else None
+        if IsSeqSmaller(rec_ack,fnak_seq):
+          print "[N_SR_ARQ] WARNING: you receive an unexpected ACK | nak_seq=%d rec_ack=%d" % (fnak_seq, rec_ack)
+          sys.exit()
+        #elif rec_ack == fnak_seq:
+        #  self.nakque.pop(0)
+        else:
+          self.pre_recv_ack = rec_ack
+          # nakque must be not empty
+          # rx an advanced ack, clean up nak queue
+          while IsSeqSmaller(fnak_seq,rec_ack):
+            self.nakque.pop(0)
+            # reset the TX state - allow more transmissions
+            if self.TX_STATE == 'WINDOW':
+              self.TX_STATE = 'NEXT'
+            if len(self.nakque) == 0:
+              break
+            fnak_seq = self.nakque[0]
+            #print "[N_SR_ARQ] nak_seq=%d rec_ack=%d" % (fnak_seq, rec_ack)
+
+    self.lock.release()
+
+    return [rx_mode,rec_seq,end_seq]  
+
+# ////////////////////////////////////////////////////// #
+#                    MAIN FUNCTION                       #
+# ////////////////////////////////////////////////////// #
+import os, glob
+def ReadImages(dirPath):
+  imageData = ""
+  imgfile = []
+  os.chdir(dirPath)
+  types = ('*.jpg','*.bmp')
+  for f in types:
+    imgfile.extend(glob.glob(f))
+  for i in imgfile:
+    print "image file: ",i
+    imgloc = i
+    #open the img
+    img = Image.open(imgloc)
+    mode = img.mode
+    if mode == 'RGB':
+      greyLevel = 3
+    elif mode == 'L':
+      greyLevel = 1
+    img_data = numpy.array(list(img.getdata()), numpy.uint8)
+    img_data.shape = len(img_data)*greyLevel,1
+    #print "img_data_before send 1: ",len(img_data)
+    #img_data consists of 680*976 pixels with RGB 3 values of each pixel, it is like [[r1,g1,b1],[r2,g2,b2].....[r663680],[g663680],[b663680]], list(img.getdata()) returns an operatable list of the img data
+
+    #the following 4 parameters measure the size of the image
+    width,height = img.size
+    width1 = width / 128
+    width2 = width % 128
+    height1 = height / 128
+    height2 = height % 128
+
+    m = [width1,width2,height1,height2,greyLevel]#1 indicates grey-level
+    #print "the picinfo vector is ",m
+    #here length means the number of values, not bytes, img_data is a nested array
+    for i in range(len(img_data)):
+      m.append(img_data[i][0])
+    buff_char = map(chr,m)
+    string = "".join(buff_char)
+    imageData = imageData+string
+
+  return imageData
+
+def ReadImage(imagePath):
+  imgloc = imagePath
+  #open the img
+  img = Image.open(imgloc)
+  mode = img.mode
+  if mode == 'RGB':
+    greyLevel = 3
+  elif mode == 'L':
+    greyLevel = 1
+  img_data = numpy.array(list(img.getdata()), numpy.uint8)
+  img_data.shape = len(img_data)*greyLevel,1
+
+  width,height = img.size
+  width1 = width / 128
+  width2 = width % 128
+  height1 = height / 128
+  height2 = height % 128
+
+  m = [width1,width2,height1,height2,greyLevel]#1 indicates grey-level
+
+  for i in range(len(img_data)):
+    m.append(img_data[i][0])
+  return m
+
+def string_to_ord_list(s):
+  return map(lambda x: ord(x), s)
+
+if __name__ == '__main__':
+  from optparse import OptionParser
+  parser = OptionParser()
+  parser.add_option("", "--play", type="int", default=1, help="Mode: txt or GUI")
+  parser.add_option("-m", "--arq-mode", type="int", default=4, help="ARQ mode")
+  parser.add_option("-t", "--times", type="int", default=100, help="time slots")
+  parser.add_option("-w", "--windowsize", type="int", default=8, help="window size")  
+  parser.add_option("-d", "--downlink", type="float", default=1, help="downlink PRR")
+  parser.add_option("-u", "--uplink", type="float", default=1, help="uplink PRR")
+  (options, args) = parser.parse_args()
+
+  play = options.play
+  assert(play == 1 or play == 2)
+
+  mode = options.arq_mode
+  run_times = options.times
+  uplink = options.uplink
+  downlink = options.downlink
+  windowsize = options.windowsize
+
+  framesize = 1535 #757 #404  #74
+  pktsize = framesize - 20 - 4
+
+  SEQ_NUM = 256
+
+  if play == 1:
+    data_raw1 = []
+    data_raw2 = []
+    for i in range(run_times):
+      x = [i] * pktsize
+      for j in range(pktsize):
+        data_raw1.append((i+j)%SEQ_NUM)
+        data_raw2.append((i+2*j)%SEQ_NUM)
+  elif play == 2:
+    data_raw1 = ReadImage('img_data/INC.bmp') #_logo_m.jpg')
+    data_raw2 = ReadImage('img_data/CUHK.bmp')#logo_m.bmp')
+
+  seed_num = random.randint(0, sys.maxint) # 9000541137569755104
+  print "LEN: ", seed_num, len(data_raw1), len(data_raw2)
+  max_pic_len = max(len(data_raw1), len(data_raw2))
+
+  import os, sys
+  f = None
+  #f = sys.stdout
+  #f = open('SR_ARQ.dat','w')
+  node11 = BufferController(data_raw1,'A',framesize,windowsize,mode,True,f)
+  node21 = BufferController(data_raw2,'B',framesize,windowsize,mode,True,f)
+
+  random.seed(seed_num)
+  for i in range(run_times):
+
+    if play == 2 and len(node11.recstring) >= max_pic_len \
+                 and len(node21.recstring) >= max_pic_len:
+      pass #break
+
+    beacon_seq = i%NSEQ
+    f11 = node11.extractTxFrame(1,beacon_seq)
+    f21 = node21.extractTxFrame(1,beacon_seq)
+
+    print i, ": ", string_to_hex_list(f11[:30]), string_to_hex_list(f11[-4:])
+    print i, ": ", string_to_hex_list(f21[:30]), string_to_hex_list(f21[-4:])
+
+    if PRINT_BUFFER_FLAG:
+      print "INFO: ", i, len(node11.recstring), len(node21.recstring), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+
+    if random.randint(1,100) <= uplink*100:
+      fxor = ''
+      for xx in range(len(f11)):
+        fxor += chr(ord(f11[xx])^ord(f21[xx]))
+      print i, ": ", len(fxor),string_to_hex_list(fxor[0:130]), string_to_hex_list(fxor[-14:])
+
+      from gnuradio import digital
+      x = digital.crc.gen_and_append_crc32(fxor[:-4])
+      print "STRING HEX LIST", len(x), string_to_hex_list(x[-4:])
+
+      rx_pkt = mac_frame_handler.HandleXorFrame(fxor,512)
+      print i, ": ", string_to_hex_list(rx_pkt[-14:])
+      from gnuradio import digital
+      (ok, payload) = digital.crc.check_crc32(rx_pkt)
+      print ok
+
+      if random.randint(1,100) <= downlink*100:
+        # for node A
+        #self_seq, = struct.unpack('!B',fxor[7])
+        #self_pkt = node11.getTxFrame(self_seq)
+        self_pkt = node11.getTxFrame(beacon_seq)
+        rxframe = ''
+        for xx in range(len(fxor)):
+          rxframe += chr(ord(fxor[xx])^ord(self_pkt[xx]))
+        #print "Node A: ", (rxframe == f21)
+        #print "f21: ", len(f21), string_to_ord_list(f21)
+
+        rxpkt = node11.updateRxQueue(rxframe)
+        #print string_to_ord_list(rxpkt)        
+
+        if play == 1 or play == 2:
+          rs = node11.recstring
+          clen = min(len(rs),len(data_raw2))
+          rs = rs[:clen]
+          d = data_raw2[:clen]
+
+          flag = (string_to_ord_list(rs[-pktsize:]) == d[-pktsize:])
+          if not flag and mode != 1:
+            print "===================================================================="
+            print "ERROR", i, len(rs), len(data_raw2), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+            print "Node B R:", string_to_ord_list(rs[-(2*pktsize):])
+            print "Node B T:", d[-(2*pktsize):]
+            break
+
+      if random.randint(1,100) <= downlink*100:  
+        # for node B
+        #self_seq, = struct.unpack('!B',fxor[9])
+        #self_pkt = node21.getTxFrame(self_seq)
+        self_pkt = node21.getTxFrame(beacon_seq)
+        rxframe = ''
+        for xx in range(len(fxor)):
+          rxframe += chr(ord(fxor[xx])^ord(self_pkt[xx]))
+        #print "Node B: ", (rxframe == f11)
+
+        rxpkt = node21.updateRxQueue(rxframe)
+        if play == 1 or play == 2:
+          rs = node21.recstring
+          clen = min(len(rs),len(data_raw1))
+          rs = rs[:clen]
+          d = data_raw1[:clen]
+
+          flag = (string_to_ord_list(rs[-pktsize:]) == d[-pktsize:])
+          if not flag and mode != 1:
+            print "===================================================================="
+            print "ERROR", i, len(rs), len(data_raw1), "f21=", string_to_ord_list(f21[-10:]), "f11=", string_to_ord_list(f11[-10:])
+            print "Node A R:", string_to_ord_list(rs[-(2*pktsize):])
+            print "Node A T:", d[-(2*pktsize):]
+            break
+
+  if f is not None and f is not sys.stdout:
+    f.close()
+
+  print len(node11.recstring)/pktsize, len(node21.recstring)/pktsize
+from functools import reduce
+def add(a,b):
+    return a+b
+def mul(a,b):
+    return a*b
+print(reduce(add,[23, 49, 6, 32],-61))
+print(reduce(add,['foo', 'bar','baz','quz']))
+print(reduce(mul,[2,4,6]))from functools import reduce
+from math import gcd
+def lcm(*num):
+    print(reduce(lambda a,b: int(a*b/gcd(a,b)),num,1))
+lcm(3,5)
+lcm(41, 106, 12) # 26076
+lcm(1, 2, 6, 24, 120, 720) # 720
+lcm(3) # 3
+lcm() # 如果没有向函数提供数字，可以返回值 1。import matrix
+
+M=[[5,6,7],[0,-3,5]]
+print(matrix.matrix_dim(M))
+print(matrix.mult_M_v(M,[[1],[2],[3]]))
+print((matrix.transpose(M)))
+print(matrix.largest_col_sum(M))
+print(matrix.switch_columns(M,1,2))import matrix
+
+M=[[5,6,7],[0,-3,5]]
+print(matrix.matrix_dim(M))
+print(matrix.mult_M_v(M,[[1],[2],[3]]))
+print((matrix.transpose(M)))
+print(matrix.largest_col_sum(M))
+print(matrix.switch_columns(M,1,2))import math
+
+def isValid(side1, side2, side3):
+    if side1+side2>side3 and side1+side3>side2 and side2+side3>side1 and abs(side1-side2)<side3 and abs(side1-side3)<side2 and abs(side2-side3)<side1:
+        print("%d,%d,%d可以构成三角形"%(side1,side2,side3))
+        return True
+    else:
+        print("%d,%d,%d不可以构成三角形"%(side1,side2,side3))
+        return False
+
+def perimeter(side1, side2, side3):
+    print("该三角形周长为：%d"%(side1+side3+side2))
+
+def area(side1, side2, side3):
+    p=(side1+side3+side2)/2
+    S=math.sqrt(p*(p-side2)*(p-side3)*(p-side1))
+    print("该三角形面积为：%.2f"%S)def sum(a, b, c):
+    print("a=%d, b=%d, c=%d"%(a,b,c))
+    print(a+b+c)
+
+
+sum(*(1,),b=2, c=3)#c
+sum(1, *(2, 3))#f
+sum(1, *(2, 3))#g
+
+sum(*(1, 2, 3))#a
+sum(1, *(2, 3))#b
+sum(*(1,),b=2, c=3)#d
+sum(*(1, 2),c=3)#e
+sum(c=1, *(2, 3))#hdef process(src, dst, num):
+    if num==0:
+        if src==dst:
+            return True
+    elif num>0:
+        for i in range(len(src)):
+            tmp = src[:i] + src[i + 1:]
+            sign=process(tmp, dst, num - 1)
+            if sign==True:
+                return sign
+
+src='abc'
+dst='bac'
+num=int(len(src)-len(dst))
+print(process(src,dst,num))import string
+def readability(str):
+    let_num=0
+    word_num=1
+    sect_num=0
+    punc='.!?'
+    for ch in str:
+        if ch not in string.punctuation and ch!=' ':
+            let_num+=1
+        if ch in punc:
+            sect_num+=1
+        if ch==' ':
+            word_num+=1
+    L=let_num/word_num*100
+    S=sect_num/word_num*100
+    index=int(0.0588*L-0.296*S-15.8)
+    if index<1:
+        print("Before Grade 1")
+    elif index>16:
+        print("Grade 16+")
+    else:
+        print('Grade {}'.format(index))
+
+with open('readability.txt') as data:
+    str=data.read()
+readability(str)print([2 * num - 1 for num in range(1,5)])
+sample=['apple', 'orange', 'pear']
+print([str[0].upper() for str in sample])
+print([sample[2*num] for num in range(2)])
+sample1=["TA_parth", "student_poohbear", "TA_michael", "TA_guido", "student_htiek"]
+print([str[3:] for str in sample1 if str[:2]=='TA'])
+print([(str,len(str)) for str in sample])
+print([{str:len(str)} for str in sample])def print_yanghui_triangle(num):
+    arr=[]#储存本行的杨辉三角
+    up=[]#储存上一行杨辉三角
+    for i in range(1,num+1):
+        arr=list(range(i))#将arr初始化为以当前行数为长度的空列表
+        for n in range(1,i+1):
+            if n==1 or n==i:#每一行第一个与最后一个元素设置为1
+                arr[n-1]=1
+            elif i!=1:#其余各元素为上一行相同位置与其前一个位置元素之和
+                arr[n-1]=up[n-1-1]+up[n-1]
+        line=''#用line字符串储存每一行杨辉三角用于输出
+        for n in range(1,i+1):
+            line += str(arr[n - 1])#将每一个元素添加到line中
+            if n!=i:#最后一个元素之前的每一个元素之后都添加空格
+                line+=' '
+        print('{:^100}'.format(line))#用format函数控制line以100个字符长度居中输出
+        up=arr#输出之后将本行三角值储存到上一行中
+
+
+print_yanghui_triangle(10)
