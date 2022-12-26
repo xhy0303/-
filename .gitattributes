@@ -1,0 +1,2 @@
+电子教案 filter=lfs diff=lfs merge=lfs -text
+作业 filter=lfs diff=lfs merge=lfs -text
